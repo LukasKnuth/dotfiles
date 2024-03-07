@@ -1,0 +1,13 @@
+configuration {
+	modes: "drun";
+	font: "JetBrainsMono 12";
+	show-icons: false;
+	disable-history: true;
+	case-sensitive: false;
+	cycle: true;
+  timeout {
+      action: "kb-cancel";
+      delay:  0;
+  }
+}
+@theme "glue_pro_blue.rasi"

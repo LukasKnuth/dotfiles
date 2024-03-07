@@ -1,0 +1,89 @@
+// -*- mode: jsonc -*-
+// THIS is the DEFAULT configuration, slightly modified and cut down to whats relevant for me.
+// Taken from https://github.com/Alexays/Waybar/blob/master/resources/config.jsonc
+{
+    //"height": 20, // Waybar height (to be removed for auto height)
+    "spacing": 6, // Gaps between modules (4px)
+    // Choose the order of the modules
+    "modules-left": [
+        "sway/workspaces",
+        "sway/mode"
+    ],
+    "modules-center": [],
+    "modules-right": [
+        "tray",
+        "cpu",
+        "memory",
+        "pulseaudio",
+        "network#wg",
+        "network",
+        "battery",
+        "clock"
+    ],
+    "sway/mode": {
+        "format": "<span style=\"italic\">{}</span>"
+    },
+    "tray": {
+        // "icon-size": 21,
+        "spacing": 10
+    },
+    "clock": {
+        "format": "{:%a, %d. %b  %H:%M}"
+    },
+    "cpu": {
+        "format": "{usage}% ",
+        "tooltip": false
+    },
+    "memory": {
+        "format": "{}% "
+    },
+    "battery": {
+        "states": {
+            // "good": 95,
+            "warning": 30,
+            "critical": 15
+        },
+        "format": "{capacity}% {icon}",
+        "format-full": "{capacity}% {icon}",
+        "format-charging": "{capacity}% ",
+        "format-plugged": "{capacity}% ",
+        "format-alt": "{time} {icon}",
+        // "format-good": "", // An empty format will hide the module
+        // "format-full": "",
+        "format-icons": ["", "", "", "", ""]
+    },
+    "network": {
+        "interface": "wlp2*", // (Optional)
+        "format-wifi": "{essid} ",
+        "format-ethernet": "{ipaddr}/{cidr} ",
+        "tooltip-format": "{ifname} via {gwaddr} ",
+        "format-linked": "{ifname} (No IP) ",
+        "format-disconnected": "Disconnected ⚠",
+        "format-alt": "{ifname}: {ipaddr}/{cidr}"
+    },
+    "network#wg": {
+      "interface": "home-bg-wg",
+      "format": "VPN ",
+      "format-disconnected": "VPN ",
+      "format-alt": "{ifname}: {ipaddr}/{cidr}",
+      "tooltip-format": "{ifname} via {gwaddr} "
+    },
+    "pulseaudio": {
+      "format": "{volume}% {icon}",
+      "format-bluetooth": "{volume}% {icon}",
+      "format-muted": "",
+      "format-icons": {
+        "headphone": "",
+        "hands-free": "",
+        "headset": "",
+        "phone": "",
+        "portable": "",
+        "car": "",
+        "default": ["", ""]
+      },
+      // disable changing via scroll
+      "on-scroll-up": "",
+      "on-scroll-down": ""
+    }
+}
+
