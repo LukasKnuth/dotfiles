@@ -12,6 +12,9 @@ stow zsh
 # Unlink config
 stow -D zsh
 
+# To replace existing config with link
+stow zsh --adopt
+
 # After doing some linking/unlinking
 chkstow --badlinks
 ```
