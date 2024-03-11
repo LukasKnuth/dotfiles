@@ -14,6 +14,7 @@
         "tray",
         "cpu",
         "memory",
+        "bluetooth",
         "pulseaudio",
         "network#wg",
         "network",
@@ -84,6 +85,9 @@
       // disable changing via scroll
       "on-scroll-up": "",
       "on-scroll-down": ""
+    },
+    "bluetooth": {
+      "format": "{status} "
     }
 }
 
