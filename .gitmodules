@@ -1,0 +1,12 @@
+[submodule "neovim/.config/nvim/pack/minimal/opt/lsp"]
+	path = neovim/.config/nvim/pack/minimal/opt/lsp
+	url = https://github.com/neovim/nvim-lspconfig.git
+[submodule "neovim/.config/nvim/pack/minimal/opt/tree-sitter"]
+	path = neovim/.config/nvim/pack/minimal/opt/tree-sitter
+	url = https://github.com/nvim-treesitter/nvim-treesitter.git
+[submodule "neovim/.config/nvim/pack/colors/opt/edge"]
+	path = neovim/.config/nvim/pack/colors/opt/edge
+	url = https://github.com/sainnhe/edge.git
+[submodule "neovim/.config/nvim/pack/minimal/opt/fzf"]
+	path = neovim/.config/nvim/pack/minimal/opt/fzf
+	url = https://github.com/ibhagwan/fzf-lua.git
