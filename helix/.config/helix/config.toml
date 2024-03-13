@@ -1,0 +1,30 @@
+theme = "kaolin-valley-dark"
+
+[editor]
+mouse = false
+cursorline = true
+insert-final-newline = true
+auto-pairs = true
+
+[editor.statusline]
+left = ["mode", "spinner", "file-modification-indicator", "read-only-indicator"]
+center = []
+right = ["version-control"]
+
+[editor.cursor-shape]
+normal = "block"
+insert = "bar"
+select = "underline"
+
+[editor.whitespace.render]
+space = "all"
+nbsp = "all"
+tab = "all"
+newline = "none"
+
+[editor.indent-guides]
+render = true
+
+[editor.soft-wrap]
+enable = true
+
