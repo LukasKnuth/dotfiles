@@ -8,7 +8,7 @@ auto-pairs = true
 
 [editor.statusline]
 left = ["mode", "spinner", "file-modification-indicator", "read-only-indicator"]
-center = []
+center = ["file-name"]
 right = ["version-control"]
 
 [editor.cursor-shape]
@@ -28,3 +28,9 @@ render = true
 [editor.soft-wrap]
 enable = true
 
+[editor.file-picker]
+hidden = false # Show any files starting with "."
+
+[keys.normal]
+"C-o" = "file_picker"
+"C-k" = "buffer_picker"
