@@ -44,6 +44,36 @@ Is placed under:
         └── style.css
 ```
 
+### Convention: Shell setup
+
+Every tool can add scripts to be included in shell startup into the `.zsh_setup.d` directory, like this:
+
+```bash
+/home/lukas/dotfiles/git
+├─ .gitconfig
+└─ .zsh_setup.d
+  └─ 10-git-aliases.sh
+```
+
+These scripts are then linked into `~/.zsh_setup.d` when the application config is linked via `stow`.
+The `.zshrc` will source all files from this directory on launch.
+
+This allows applications to run additional setup logic only when its config is actually linked.
+This keeps the zsh config short and free of dependencies on installed tools.
+
+**What do the numbers mean?**
+This is modeled after init scripts in Unix systems used to work.
+Every script-name can start with a number, which influences the file-ordering and therefor the order in which the scripts are sourced startup.
+
+| Range | Meaning | Example |
+| --- | --- | --- |
+| 0-9 | Reserved for special things that **must** run first |
+| 10-19 | Setup configuration that other scripts could depend on | `export $EDITOR` |
+| 20-29 | Setup applications that other scripts could depend on | direnv |
+| 30-49 | Reserved |
+| 50-59 | Scripts that depends on previous setup scripts | git |
+| 60-69 | Independent scripts with no dependencies | 
+
 ## Things to know
 
 These files go into different directories to be picked up by the specific tools.
