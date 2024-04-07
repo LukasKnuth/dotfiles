@@ -21,7 +21,7 @@ chkstow --badlinks
 
 ## Structure
 
-The folder structure inside this repository is devided by individual applications. Each app has it's own directory.
+The folder structure inside this repository is divided by individual applications. Each app has its own directory.
 
 _Within_ these directories, the folder structure **must match** the structure in the home directory.
 
