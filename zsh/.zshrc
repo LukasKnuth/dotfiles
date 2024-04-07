@@ -7,6 +7,11 @@ ZSH_THEME="gitster"
 # Change the command execution timestamp shown in the history command output.
 HIST_STAMPS="dd.mm.yyyy"
 
+# oh-my-zsh update behavior
+zstyle ':omz:update' mode reminder
+zstyle ':omz:update' verbose minimal
+zstyle ':omz:update' frequency 14 # days
+
 # Standard plugins can be found in $ZSH/plugins/
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 plugins=(git direnv zsh-autosuggestions zsh-vi-mode)
