@@ -16,4 +16,55 @@
 	required = true
 	clean = git-lfs clean -- %f
 [alias]
-	tree = log --graph --pretty=oneline --abbrev-commit
+	# NOTE: ! runs the command in a shell and sets the working-dir to the repo root.
+	# Edit special files
+	open = "!$(git config --get core.editor)"
+	ignore = "!git open .gitignore"
+	# Search string in codebase
+	gr = grep -Ii
+	f = "!git ls-files | grep -i"
+	# Find in change
+	fc = "!f() { git log --patch -S\"$1\" "${@:2}"; }; f"
+	# Find in message
+	fm = "!f() { git log --patch -i --grep=\"$1\" "${@:2}"; }; f"
+	# Shorthands
+	a = add
+	aa = add --all
+	ai = add -i
+	ap = add -p
+	# Allow adding a new file with patches only.
+	apn = "!f() { git add -N "$1" && git add -p "$1"; }; f"
+	co = commit
+	com = commit -m
+	ca = commit --amend
+	can = commit --amend --no-edit
+	ft = fetch
+	fp = fetch --prune
+	pl = pull
+	pls = pull --autostash
+	s = status
+	ss = status --short
+	br = branch
+	t = tag
+	sw = switch
+	swc = switch --create
+	di = diff
+	ds = diff --staged
+	conflicts = diff --name-only --diff-filter=U
+	sh = show
+	st = stash
+	stl = stash list
+	std = stash drop
+	stp = stash pop
+	me = merge
+	rb = rebase
+	ri = rebase --interactive
+	pu = push
+	# Last commit hash/message
+	lcm = log --format='"%B"' -1
+	lch = log --format=%H -1
+	# Git log supercharged
+	log-custom-format = log --pretty=format:"\"%C(yellow)%h %C(yellow)<%Cred%ad%C(yellow)>%C(auto)%d %Creset%s %C(cyan)[%an]%Creset\"" --graph --decorate
+	l = !git log-custom-format --date=relative
+	ll = !git log-custom-format --date=relative --decorate --stat --summary
+
