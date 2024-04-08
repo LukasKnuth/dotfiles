@@ -34,3 +34,5 @@ hidden = false # Show any files starting with "."
 [keys.normal]
 "C-o" = "file_picker"
 "C-k" = "buffer_picker"
+"tab" = "rotate_view"
+
