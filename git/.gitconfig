@@ -29,8 +29,6 @@
 	fm = "!f() { git log --patch -i --grep=\"$1\" "${@:2}"; }; f"
 	# Shorthands
 	a = add
-	aa = add --all
-	ai = add -i
 	ap = add -p
 	# Allow adding a new file with patches only.
 	apn = "!f() { git add -N "$1" && git add -p "$1"; }; f"
@@ -42,10 +40,9 @@
 	fp = fetch --prune
 	pl = pull
 	pls = pull --autostash
-	s = status
-	ss = status --short
-	br = branch
-	t = tag
+	s = status --short
+	ss = status
+	re = restore --staged
 	sw = switch
 	swc = switch --create
 	di = diff
@@ -56,9 +53,6 @@
 	stl = stash list
 	std = stash drop
 	stp = stash pop
-	me = merge
-	rb = rebase
-	ri = rebase --interactive
 	pu = push
 	# Last commit hash/message
 	lcm = log --format='"%B"' -1
