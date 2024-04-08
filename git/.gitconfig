@@ -1,10 +1,19 @@
-[alias]
-	tree = log --graph --pretty=oneline --abbrev-commit
 [user]
+	signingkey = ~/.ssh/id_ed25519.pub
 	name = Lukas Knuth
 	email = me@lknuth.dev
-	signingkey = /home/lukas/.ssh/id_ed25519.pub
+[includeIf "gitdir:~/work/"]
+	path = .gitconfig-work
+[commit]
+	gpgsign = true
 [gpg]
 	format = ssh
 [init]
 	defaultBranch = main
+[filter "lfs"]
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+	clean = git-lfs clean -- %f
+[alias]
+	tree = log --graph --pretty=oneline --abbrev-commit
