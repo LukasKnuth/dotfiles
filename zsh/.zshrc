@@ -14,7 +14,7 @@ zstyle ':omz:update' frequency 14 # days
 
 # Standard plugins can be found in $ZSH/plugins/
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
-plugins=(git direnv asdf fzf zsh-autosuggestions zsh-vi-mode)
+plugins=(direnv asdf fzf zsh-autosuggestions zsh-vi-mode)
 
 source $ZSH/oh-my-zsh.sh
 
