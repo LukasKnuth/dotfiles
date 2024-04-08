@@ -40,6 +40,7 @@
 	fp = fetch --prune
 	pl = pull
 	pls = pull --autostash
+	ph = push
 	s = status --short
 	ss = status
 	re = restore
@@ -54,7 +55,6 @@
 	stl = stash list
 	std = stash drop
 	stp = stash pop
-	pu = push
 	# Last commit hash/message
 	lcm = log --format='"%B"' -1
 	lch = log --format=%H -1
