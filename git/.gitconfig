@@ -42,7 +42,8 @@
 	pls = pull --autostash
 	s = status --short
 	ss = status
-	re = restore --staged
+	re = restore
+	res = restore --staged
 	sw = switch
 	swc = switch --create
 	di = diff
