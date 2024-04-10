@@ -16,18 +16,22 @@
 	required = true
 	clean = git-lfs clean -- %f
 [alias]
+	# --- Helpers ---
 	# NOTE: ! runs the command in a shell and sets the working-dir to the repo root.
 	# Edit special files
 	open = "!$(git config --get core.editor)"
 	ignore = "!git open .gitignore"
-	# Search string in codebase
-	gr = grep -Ii
 	f = "!git ls-files | grep -i"
 	# Find in change
 	fc = "!f() { git log --patch -S\"$1\" "${@:2}"; }; f"
 	# Find in message
 	fm = "!f() { git log --patch -i --grep=\"$1\" "${@:2}"; }; f"
-	# Shorthands
+	# Search string in codebase
+	gr = grep -Ii
+	# Git log supercharged
+	log-custom-format = log --pretty=format:"\"%C(yellow)%h %C(yellow)<%Cred%ad%C(yellow)>%C(auto)%d %Creset%s %C(cyan)[%an]%Creset\"" --graph --decorate
+
+	# --- Shorthands ---
 	a = add
 	ap = add -p
 	# Allow adding a new file with patches only.
@@ -36,30 +40,27 @@
 	com = commit -m
 	ca = commit --amend
 	can = commit --amend --no-edit
+	conflicts = diff --name-only --diff-filter=U
+	di = diff
+	ds = diff --staged
 	ft = fetch
 	fp = fetch --prune
+	l = !git log-custom-format --date=relative
+	ll = !git log-custom-format --date=relative --decorate --stat --summary
+	lcm = log --format='"%B"' -1
+	lch = log --format=%H -1
 	pl = pull
 	pls = pull --autostash
 	ph = push
-	s = status --short
-	ss = status
 	re = restore
 	res = restore --staged
+	s = status --short
+	ss = status
 	sw = switch
 	swc = switch --create
-	di = diff
-	ds = diff --staged
-	conflicts = diff --name-only --diff-filter=U
 	sh = show
 	st = stash
 	stl = stash list
 	std = stash drop
 	stp = stash pop
-	# Last commit hash/message
-	lcm = log --format='"%B"' -1
-	lch = log --format=%H -1
-	# Git log supercharged
-	log-custom-format = log --pretty=format:"\"%C(yellow)%h %C(yellow)<%Cred%ad%C(yellow)>%C(auto)%d %Creset%s %C(cyan)[%an]%Creset\"" --graph --decorate
-	l = !git log-custom-format --date=relative
-	ll = !git log-custom-format --date=relative --decorate --stat --summary
 
