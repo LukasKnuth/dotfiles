@@ -21,5 +21,3 @@ window:
   decorations_theme_variant: Dark
   opacity: 0.95
   blur: false
-  # For OS X
-  option_as_alt: "Both"
