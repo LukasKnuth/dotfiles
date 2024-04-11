@@ -65,4 +65,5 @@
 	stl = stash list
 	std = stash drop
 	stp = stash pop
+	undo = reset --soft HEAD~1
 
