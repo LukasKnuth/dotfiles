@@ -42,7 +42,7 @@
 	can = commit --amend --no-edit
 	conflicts = diff --name-only --diff-filter=U
 	di = diff
-	ds = diff --staged
+	dis = diff --staged
 	ft = fetch
 	fp = fetch --prune
 	l = !git log-custom-format --date=relative
