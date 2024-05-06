@@ -2,7 +2,7 @@
 # Stolen from https://github.com/alacritty/alacritty/blob/v0.12.3/alacritty.yml
 
 font:
-  size: 16.0
+  size: 20.0
   normal:
     family: &font-fam "JetBrains Mono"
     style: "Regular"
