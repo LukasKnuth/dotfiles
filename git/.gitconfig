@@ -63,8 +63,9 @@
 	sw = switch
 	swc = switch --create
 	sh = show
-	st = stash
-	stl = stash list
+	st = stash list
+	sta = stash
+	sts = stash --staged
 	std = stash drop
 	stp = stash pop
 	undo = reset --soft HEAD~1
