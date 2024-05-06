@@ -33,13 +33,13 @@
 
 	# --- Shorthands ---
 	a = add
-	ap = add -p
+	ap = add --patch
 	# Allow adding a new file with patches only.
 	apn = "!f() { git add -N "$1" && git add -p "$1"; }; f"
 	b = branch
-	bd = branch -D
+	bd = branch --delete --force
 	co = commit
-	com = commit -m
+	com = commit --message
 	ca = commit --amend
 	can = commit --amend --no-edit
 	conflicts = diff --name-only --diff-filter=U
