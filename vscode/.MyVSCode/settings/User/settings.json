@@ -1,0 +1,27 @@
+{
+    "files.autoSave": "afterDelay",
+    "editor.fontSize": 20,
+    "editor.fontFamily": "\"JetBrainsMono NF\", Menlo, Monaco, 'Courier New', monospace",
+    "editor.renderWhitespace": "boundary",
+    "editor.insertSpaces": false,
+    "workbench.editor.showTabs": "single",
+    "workbench.editor.enablePreview": false,
+    "editor.rulers": [
+        120
+    ],
+    "redhat.telemetry.enabled": false,
+    "editor.fontLigatures": true,
+    "terminal.integrated.fontSize": 20,
+    "diffEditor.ignoreTrimWhitespace": false,
+    "editor.indentSize": "tabSize",
+    "editor.tabSize": 2,
+    "emmet.includeLanguages": {
+      "phoenix-heex": "html"
+    },
+    "jestrunner.disableCodeLens": true,
+    "vs-kubernetes": {
+      "vs-kubernetes.crd-code-completion": "disabled"
+    },
+    "editor.minimap.enabled": false,
+    "git.mergeEditor": false
+}
