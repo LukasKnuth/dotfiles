@@ -2,9 +2,7 @@ tap "fluxcd/tap"
 tap "hashicorp/tap"
 tap "homebrew/bundle"
 tap "homebrew/cask"
-tap "homebrew/cask-drivers"
 tap "homebrew/cask-fonts"
-tap "homebrew/cask-versions"
 tap "homebrew/core"
 tap "homebrew/services"
 tap "localsend/localsend"
@@ -64,7 +62,9 @@ brew "harfbuzz"
 # Image processing and image analysis library
 brew "leptonica"
 # Package for scientific computing with Python
-brew "numpy", link: false
+brew "numpy"
+# Open Visual Inference And Optimization toolkit for AI inference
+brew "openvino"
 # Framework for layout and rendering of i18n text
 brew "pango"
 # OCR (Optical Character Recognition) engine
