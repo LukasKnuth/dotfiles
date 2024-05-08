@@ -19,6 +19,19 @@ After stowing the file into the Home directory, run
 brew bundle install --file="$HOME/.Brewfile"
 ```
 
+**NOTE**: To get this to work unattended, we can use the `SUDO_ASKPASS` variable: It must have the path of an executable/script which prints the password to use to stdout, for example:
+
+```bash
+echo "this is my pw"
+```
+
+The script must be made executable with `chmod +x script.sh`. Then, run:
+
+
+```bash
+SUDO_ASKPASS=/path/to/pw.sh brew bundle install --file="$HOME/.Brewfile"
+```
+
 ## Brew basics
 
 * Find a with `brew search <pkg>`
