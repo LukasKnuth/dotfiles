@@ -3,6 +3,12 @@
 This app is a bit silly: it stores its user configuration in different places for Linux/macOS.
 This makes it very hard to get it working with stow.
 
+1. Install VSCode (maybe through `brew`?)
+2. Run it once and close it again
+3. `stow vscode` to get personal settings
+4. `vscode/install-extensions.sh` to install extensions
+5. Done
+
 ## How it's done
 
 Instead of using the default directory for user data, we set one explicitly with the `--user-data-dir` argument.
@@ -18,7 +24,7 @@ Sadly, extensions aren't simply stored in a file and then automatically installe
 Instead, we save/install them manually:
 
 - Save currently installed extensions: `code --list-extensions > file.txt`
-- Install everything: 
+- Install everything: `vscode/install-extensions.sh`
 
 # References
 
