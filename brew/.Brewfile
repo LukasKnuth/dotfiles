@@ -6,6 +6,7 @@ tap "homebrew/cask-fonts"
 tap "homebrew/core"
 tap "homebrew/services"
 tap "localsend/localsend"
+tap "lukasknuth/tap", "git@github.com:LukasKnuth/homebrew-tap.git"
 tap "siderolabs/tap"
 # TIFF library and utilities
 brew "libtiff"
@@ -157,6 +158,10 @@ brew "python@3.9"
 brew "ranger"
 # Search tool like grep and The Silver Searcher
 brew "ripgrep"
+# Static analysis and lint tool, for (ba)sh scripts
+brew "shellcheck"
+# Autoformat shell script source code
+brew "shfmt"
 # Organize software neatly under a single directory tree (e.g. /usr/local)
 brew "stow"
 # Secures, stores, and tightly controls access to secrets
@@ -255,6 +260,7 @@ cask "shotcut"
 cask "slack"
 # Music streaming service
 cask "spotify"
+# Truly removes mouse acceleration in Apple system
 cask "steelseries-exactmouse-tool"
 # Text editor for code, markup and prose
 cask "sublime-text"
