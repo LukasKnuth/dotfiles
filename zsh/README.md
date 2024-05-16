@@ -34,3 +34,13 @@ oh-my-zsh is configured to remind about updates automatically.
 
 Alternatively, `omz update` manually fetches the newest version from github and prints all changes/fixes
 
+## Built-in
+
+Most of these come built into oh-my-zsh as nice helpers to be aware of:
+
+- Pipe into `clipcopy` to copy it to the clipboard (automatically picks correct tool)
+- Redirect from `clippaste` to past from the clipboard (automatically picks correct tool)
+- `cd -` takes you to the previous directory. `cd -2` takes you two directories back, etc
+- To open something with its default application _on the desktop, use the `open` function
+- To get absolute path to a file, run `realpath file`
+
