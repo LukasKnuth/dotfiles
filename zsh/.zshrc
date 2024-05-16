@@ -7,6 +7,8 @@ ZSH_THEME="gitster"
 # Change the command execution timestamp shown in the history command output.
 HIST_STAMPS="dd.mm.yyyy"
 
+# Don't set any aliases from oh-my-zsh and/or plugins - keep the aliases clean
+zstyle ':omz:*' aliases no
 # oh-my-zsh update behavior
 zstyle ':omz:update' mode reminder
 zstyle ':omz:update' verbose minimal
