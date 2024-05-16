@@ -52,7 +52,7 @@ Every tool can add scripts to be included in shell startup into the `.zsh_setup.
 /home/lukas/dotfiles/git
 ├─ .gitconfig
 └─ .zsh_setup.d
-  └─ 10-git-aliases.sh
+  └─ 60-git-aliases.sh
 ```
 
 These scripts are then linked into `~/.zsh_setup.d` when the application config is linked via `stow`.
@@ -67,12 +67,12 @@ Every script-name can start with a number, which influences the file-ordering an
 
 | Range | Meaning | Example |
 | --- | --- | --- |
-| 0-9 | Reserved for special things that **must** run first |
+| 0-9 | Reserved for special things that **must** run first | Add `brew`-path to `PATH` |
 | 10-19 | Setup configuration that other scripts could depend on | `export $EDITOR` |
-| 20-29 | Setup applications that other scripts could depend on | direnv |
+| 20-29 | Setup applications that other scripts could depend on | `eval $(direnv --setup)` |
 | 30-49 | Reserved |
-| 50-59 | Scripts that depends on previous setup scripts | git |
-| 60-69 | Independent scripts with no dependencies | 
+| 50-59 | Scripts that depends on previous setup scripts | Direnv extra helpers |
+| 60-69 | Independent scripts with no dependencies | `alias l='eza'` |
 
 ## Things to know
 
