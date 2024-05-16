@@ -26,7 +26,7 @@ A few custom plugins are used which do not ship with oh-my-zsh by default:
 * [zsh-autosuggestions](https://github.com/zsh-users/zsh-autosuggestions) - suggests commands from history on typing
 * [zsh-vi-mode](https://github.com/jeffreytse/zsh-vi-mode) - allows navigating in prompt with VI keybinds
 
-These need to be installed - usually just `git clone` into `~/.oh-my-zsh/custom/plugins`.
+These are shipped with this config for ease of use.
 
 ## Update
 
