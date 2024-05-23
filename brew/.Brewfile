@@ -22,6 +22,8 @@ brew "openssl@3"
 brew "python@3.12"
 # Columnar in-memory analytics layer designed to accelerate big data
 brew "apache-arrow"
+# GitOps Continuous Delivery for Kubernetes
+brew "argocd"
 # Automatic configure script builder
 brew "autoconf"
 # GNU File, Shell, and Text utilities
