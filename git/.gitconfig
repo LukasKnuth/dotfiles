@@ -47,6 +47,8 @@
 	dis = diff --staged
 	ft = fetch
 	fp = fetch --prune
+	h = "!f() { git log-custom-format --follow -- "$1"; }; f"
+	hr = "!f() { git restore --source="$1" "$2"; }; f"
 	l = !git log-custom-format --date=relative
 	ll = !git log-custom-format --date=relative --decorate --stat --summary
 	lcm = log --format='"%B"' -1
