@@ -54,8 +54,8 @@ decrease-main: {mod: "mod1", key: "."}
 focus-ccw: {mod: "mod1", key: "j"}
 focus-cw: {mod: "mod1", key: "k"}
 focus-main: {mod: "mod1", key: "m"}
-swap-ccw: {mod: "mod2", key: "u"}
-swap-cw: {mod: "mod2", key: "i"}
+swap-ccw: {mod: "mod1", key: "u"}
+swap-cw: {mod: "mod1", key: "i"}
 swap-main: {mod: "mod1", key: "o"}
 throw-space-left: {mod: "mod2", key: "left"}
 throw-space-right: {mod: "mod2", key: "right"}
