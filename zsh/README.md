@@ -44,3 +44,9 @@ Most of these come built into oh-my-zsh as nice helpers to be aware of:
 - To open something with its default application _on the desktop, use the `open` function
 - To get absolute path to a file, run `realpath file`
 
+## References
+
+- https://thevaluable.dev/zsh-install-configure-mouseless/
+  - Ideas and examples of how to configure ZSH _without_ oh-my-zsh
+- https://zsh.sourceforge.io/Doc/Release/Options.html
+  - List of ZSH _built-in_ options to influence how the shell handles
