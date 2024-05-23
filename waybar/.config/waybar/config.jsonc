@@ -63,7 +63,7 @@
         "format-alt": "{ifname}: {ipaddr}/{cidr}"
     },
     "network#wg": {
-      "interface": "home-bg-wg",
+      "interface": "home-cgn",
       "format": "VPN ",
       "format-disconnected": "VPN ",
       "format-alt": "{ifname}: {ipaddr}/{cidr}",
