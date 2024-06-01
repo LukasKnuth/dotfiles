@@ -1,0 +1,13 @@
+# Functional
+show-failed-attempts
+ignore-empty-password
+
+# Visual
+image=/home/lukas/Pictures/wallpaper.jpg
+scaling=fill
+font=Noto Sans
+font-size=24
+indicator-radius=200
+
+show-keyboard-layout
+indicator-caps-lock
