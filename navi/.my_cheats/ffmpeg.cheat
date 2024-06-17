@@ -10,12 +10,19 @@ ffmpeg -i <input> -map <stream> -codec copy <output>
 ffmpeg -i <input> -filter_complex "[0:v] palettegen" <palette>
 
 # Create high-quality GIF
-ffmpeg -i <input> -i <palette> -filter_complex "[0:v] fps=<fps>,scale=<scale>:-1 [a]; [a][1:v] paletteuse" -loop <loop> <output>
+; https://superuser.com/a/1695537/122634
+ffmpeg -i <input> -filter_complex "fps=<fps>,scale=<scale>:-1:flags=lanczos,split[s0][s1];[s0]palettegen=max_colors=<colors>[p];[s1][p]paletteuse=dither=bayer" -loop <loop> <output>
+
+# Create high-quality WEBP
+; Usually gets better filesize at same or better quality than GIF
+; https://gist.github.com/witmin/1edf926c2886d5c8d9b264d70baf7379
+ffmpeg -i <input> -vcodec libwebp -filter:v "fps=fps=<fps>, scale=<scale>:-1" -lossless 1 -loop <loop> -preset default -an -vsync 0 <output>
 
 $ input: ls
 $ palette: echo "palette.png"
-; -1 Plays once, 0 play infinite, X plays x-times
-$ loop: echo -e "-1\n0"
+; -1 Plays once, 0 play infinite, X loops x-times
+$ loop: echo -e "-1\n0\n1"
 $ fps: echo -e "24\n30\n60"
 $ scale: echo -e "480\n320"
+$ colors: echo -e "32\n"
 $ stream: echo -e "video\naudio\nsubtitles" --- --map "head -c 1"
