@@ -138,6 +138,10 @@ brew "ltex-ls"
 brew "marksman"
 # Replacement for ls, cp and other commands for object storage
 brew "minio-mc"
+# Interactive cheatsheet tool for the command-line
+brew "navi"
+# Modern shell for the GitHub era
+brew "nushell"
 # Cryptography and SSL/TLS Toolkit
 brew "openssl@1.1"
 # 7-Zip (high compression file archiver) implementation
@@ -160,6 +164,8 @@ brew "python@3.9"
 brew "ranger"
 # Search tool like grep and The Silver Searcher
 brew "ripgrep"
+# Intuitive find & replace CLI
+brew "sd"
 # Static analysis and lint tool, for (ba)sh scripts
 brew "shellcheck"
 # Autoformat shell script source code
@@ -220,7 +226,6 @@ cask "docker"
 cask "eqmac"
 # Web browser
 cask "firefox"
-# Typeface made for developers
 cask "font-jetbrains-mono"
 # Disk partitioning tool
 cask "gdisk"
