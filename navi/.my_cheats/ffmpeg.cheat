@@ -1,0 +1,21 @@
+% ffmpeg, audio, video
+
+# Shorten a piece of media
+ffmpeg -ss <start_time> -i <input> -map 0 -codec copy -to <how_long> <output>
+
+# Extract specific stream from media
+ffmpeg -i <input> -map <stream> -codec copy <output>
+
+# Extract palette for GIF creation
+ffmpeg -i <input> -filter_complex "[0:v] palettegen" <palette>
+
+# Create high-quality GIF
+ffmpeg -i <input> -i <palette> -filter_complex "[0:v] fps=<fps>,scale=<scale>:-1 [a]; [a][1:v] paletteuse" -loop <loop> <output>
+
+$ input: ls
+$ palette: echo "palette.png"
+; -1 Plays once, 0 play infinite, X plays x-times
+$ loop: echo -e "-1\n0"
+$ fps: echo -e "24\n30\n60"
+$ scale: echo -e "480\n320"
+$ stream: echo -e "video\naudio\nsubtitles" --- --map "head -c 1"
