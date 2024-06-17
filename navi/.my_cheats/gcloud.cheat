@@ -1,0 +1,8 @@
+% google cloud
+
+# Connect to Cloud SQL Database
+gcloud beta sql connect <sql_instance> --user=<sql_usr> --database=<sql_db> --quiet
+
+$ sql_instance: gcloud sql instances list --format="get(name)"
+$ sql_db: gcloud sql databases list -i <sql_instance> --format="get(name)"
+$ sql_usr: gcloud sql users list -i <sql_instance> --format="get(name)" 
