@@ -1,0 +1,17 @@
+% asdf versions
+
+# Install specific version
+asdf install <plugin> <version>
+
+# Set LOCAL version
+asdf local <plugin> <installed>
+
+# Set GLOBAL version
+asdf global <plugin> <installed>
+
+# Get current versions
+asdf current
+
+$ plugin: asdf plugin list
+$ version: asdf list all <plugin>
+$ installed: asdf list <plugin>
