@@ -7,8 +7,8 @@ insert-final-newline = true
 auto-pairs = true
 
 [editor.statusline]
-left = ["mode", "spinner", "file-modification-indicator", "read-only-indicator"]
-center = ["file-name"]
+left = ["mode", "spinner", "file-modification-indicator", "read-only-indicator", "file-name"]
+center = []
 right = ["version-control"]
 
 [editor.cursor-shape]
