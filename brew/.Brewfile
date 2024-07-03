@@ -54,8 +54,6 @@ brew "docutils"
 brew "entr"
 # Modern, maintained replacement for ls
 brew "eza"
-# GNU compiler collection
-brew "gcc"
 # Validating, recursive, caching DNS resolver
 brew "unbound"
 # GNU Transport Layer Security (TLS) Library
@@ -64,10 +62,6 @@ brew "gnutls"
 brew "harfbuzz"
 # Image processing and image analysis library
 brew "leptonica"
-# Package for scientific computing with Python
-brew "numpy"
-# Open Visual Inference And Optimization toolkit for AI inference
-brew "openvino"
 # Framework for layout and rendering of i18n text
 brew "pango"
 # OCR (Optical Character Recognition) engine
@@ -82,6 +76,8 @@ brew "fop"
 brew "freetds"
 # Command-line fuzzy finder written in Go
 brew "fzf"
+# GNU compiler collection
+brew "gcc"
 # Library for encoding and decoding .avif files
 brew "libavif"
 # Graphics library to dynamically manipulate images
@@ -98,6 +94,8 @@ brew "shared-mime-info"
 brew "libheif"
 # Adds spatial SQL capabilities to SQLite
 brew "libspatialite"
+# Package for scientific computing with Python
+brew "numpy"
 # PDF rendering library (based on the xpdf-3.0 code base)
 brew "poppler"
 # Geospatial Data Abstraction Library
@@ -144,6 +142,8 @@ brew "navi"
 brew "nushell"
 # Cryptography and SSL/TLS Toolkit
 brew "openssl@1.1"
+# Open Visual Inference And Optimization toolkit for AI inference
+brew "openvino"
 # 7-Zip (high compression file archiver) implementation
 brew "p7zip"
 # Highly capable, feature-rich programming language
