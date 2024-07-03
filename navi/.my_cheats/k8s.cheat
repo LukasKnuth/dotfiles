@@ -1,0 +1,4 @@
+% devops kubernetes
+
+# List all Resource Types
+kubectl api-resources
