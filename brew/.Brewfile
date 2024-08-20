@@ -100,6 +100,8 @@ brew "numpy"
 brew "poppler"
 # Geospatial Data Abstraction Library
 brew "gdal"
+# GitHub command-line tool
+brew "gh"
 # Distributed revision control system
 brew "git"
 # Git extension for versioning large files
@@ -162,6 +164,8 @@ brew "python@3.10"
 brew "python@3.9"
 # File browser
 brew "ranger"
+# Persistent key-value database, with built-in net interface
+brew "redis"
 # Search tool like grep and The Silver Searcher
 brew "ripgrep"
 # Intuitive find & replace CLI
