@@ -2,3 +2,13 @@
 
 # List all Resource Types
 kubectl api-resources
+
+# Port Forward connections
+kubectl -n <namespace> port-forward <type>/<name> <port>:<port>
+
+# Restart Deployment
+kubectl -n <namespace> rollout restart deployment/<deployment>
+
+$ type: echo -e "pod\ndeployment\nservice"
+$ namespace: kubectl get namespaces -o custom-columns=":metadata.name" --no-headers
+$ deployment: kubectl get -n <namespace> deployments -o custom-columns=":metadata.name" --no-headers
