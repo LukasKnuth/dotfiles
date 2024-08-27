@@ -223,7 +223,7 @@ cask "calibre"
 # Allows switching between application windows
 cask "contexts"
 # API documentation browser and code snippet manager
-cask "dash"
+cask "dash@6"
 # Universal database tool and SQL client
 cask "dbeaver-community"
 # App to build and share containerised applications and microservices
