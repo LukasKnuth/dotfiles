@@ -54,6 +54,8 @@ brew "docutils"
 brew "entr"
 # Modern, maintained replacement for ls
 brew "eza"
+# Simple, fast and user-friendly alternative to find
+brew "fd"
 # Validating, recursive, caching DNS resolver
 brew "unbound"
 # GNU Transport Layer Security (TLS) Library
