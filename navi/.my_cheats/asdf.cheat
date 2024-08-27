@@ -1,5 +1,11 @@
 % asdf versions
 
+# List available versions
+asdf list all <plugin>
+
+# List installed versions
+asdf list <plugin>
+
 # Install specific version
 asdf install <plugin> <version>
 
