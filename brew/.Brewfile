@@ -7,6 +7,7 @@ tap "homebrew/core"
 tap "homebrew/services"
 tap "localsend/localsend"
 tap "lukasknuth/tap", "git@github.com:LukasKnuth/homebrew-tap.git"
+tap "nikitabobko/tap"
 tap "siderolabs/tap"
 # TIFF library and utilities
 brew "libtiff"
@@ -206,6 +207,8 @@ brew "siderolabs/tap/talosctl"
 cask "1password"
 # Command-line interface for 1Password
 cask "1password-cli"
+# AeroSpace is an i3-like tiling window manager for macOS
+cask "aerospace"
 # GPU-accelerated terminal emulator
 cask "alacritty"
 # Application launcher and productivity software
