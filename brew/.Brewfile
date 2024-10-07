@@ -19,8 +19,6 @@ brew "jpeg-xl"
 brew "aom"
 # Cryptography and SSL/TLS Toolkit
 brew "openssl@3"
-# Interpreted, interactive, object-oriented programming language
-brew "python@3.12"
 # Columnar in-memory analytics layer designed to accelerate big data
 brew "apache-arrow"
 # GitOps Continuous Delivery for Kubernetes
@@ -33,16 +31,18 @@ brew "coreutils"
 brew "asdf"
 # Use AWS IAM credentials to authenticate to Kubernetes
 brew "aws-iam-authenticator"
+# C parser in Python
+brew "pycparser"
+# C Foreign Function Interface for Python
+brew "cffi"
+# Interpreted, interactive, object-oriented programming language
+brew "python@3.12"
 # Official Amazon AWS command-line interface
 brew "awscli"
 # Clone of cat(1) with syntax highlighting and Git integration
 brew "bat"
 # Vector graphics library with cross-device output support
 brew "cairo"
-# C parser in Python
-brew "pycparser"
-# C Foreign Function Interface for Python
-brew "cffi"
 # Modern diagram scripting language that turns text to diagrams
 brew "d2"
 # Secure runtime for JavaScript and TypeScript
@@ -256,7 +256,7 @@ cask "itsycal"
 cask "karabiner-elements"
 # App to manage software development and track bugs
 cask "linear-linear"
-# An open source cross-platform alternative to AirDrop
+# Open-source cross-platform alternative to AirDrop
 cask "localsend"
 # Screen and video recording software
 cask "loom"
