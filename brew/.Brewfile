@@ -246,6 +246,8 @@ cask "gimp"
 cask "google-chrome"
 # Set of tools to manage resources and applications hosted on Google Cloud
 cask "google-cloud-sdk"
+# Podcast client
+cask "gpodder"
 # Vector graphics editor
 cask "inkscape"
 # Terminal emulator as alternative to Apple's Terminal app
@@ -260,6 +262,8 @@ cask "linear-linear"
 cask "localsend"
 # Screen and video recording software
 cask "loom"
+# Tag editor for digital music
+cask "meta"
 # Desktop client for the Matrix protocol
 cask "nheko"
 # Open-source software for live streaming and screen recording
@@ -280,6 +284,8 @@ cask "slack"
 cask "spotify"
 # Truly removes mouse acceleration in Apple system
 cask "steelseries-exactmouse-tool"
+# Cross-platform music player and music collection organizer and iPod support
+cask "strawberry"
 # Text editor for code, markup and prose
 cask "sublime-text"
 # Real time file synchronisation software
