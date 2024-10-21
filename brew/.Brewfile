@@ -258,6 +258,8 @@ cask "itsycal"
 cask "karabiner-elements"
 # App to manage software development and track bugs
 cask "linear-linear"
+# Code notebooks for Elixir developers
+cask "livebook"
 # Open-source cross-platform alternative to AirDrop
 cask "localsend"
 # Screen and video recording software
