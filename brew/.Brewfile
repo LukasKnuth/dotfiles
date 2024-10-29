@@ -298,6 +298,8 @@ cask "utm"
 cask "visual-studio-code"
 # Multimedia player
 cask "vlc"
+# GPU-accelerated cross-platform terminal emulator and multiplexer
+cask "wezterm"
 # Network protocol analyzer
 cask "wireshark"
 # Multiplayer code editor
