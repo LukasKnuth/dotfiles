@@ -35,4 +35,7 @@ hidden = false # Show any files starting with "."
 "C-o" = "file_picker"
 "C-k" = "buffer_picker"
 "tab" = "rotate_view"
-
+"S-tab" = "rotate_view_reverse"
+# Also Ctrl+s to add an item to the jumplist manually
+"C-h" = "jump_backward"
+"C-l" = "jump_forward"
