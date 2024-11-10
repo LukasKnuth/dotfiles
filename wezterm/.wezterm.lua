@@ -45,4 +45,25 @@ config.key_tables = {
   },
 }
 
+config.mouse_bindings = {
+  -- Change the default click behavior so that it only selects text..
+  {
+    event = { Up = { streak = 1, button = 'Left' } },
+    mods = 'NONE',
+    action = act.CompleteSelection 'ClipboardAndPrimarySelection',
+  },
+  -- ..then make CTRL-Click open hyperlinks.
+  {
+    event = { Up = { streak = 1, button = 'Left' } },
+    mods = 'CTRL',
+    action = act.OpenLinkAtMouseCursor,
+  },
+  -- Consume Down event so that programs don't receive Down without previous Up
+  {
+    event = { Down = { streak = 1, button = 'Left' } },
+    mods = 'CTRL',
+    action = act.Nop,
+  },
+}
+
 return config
