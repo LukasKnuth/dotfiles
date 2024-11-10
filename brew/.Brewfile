@@ -254,8 +254,6 @@ cask "inkscape"
 cask "iterm2"
 # Menu bar calendar
 cask "itsycal"
-# Keyboard customiser
-cask "karabiner-elements"
 # App to manage software development and track bugs
 cask "linear-linear"
 # Code notebooks for Elixir developers
