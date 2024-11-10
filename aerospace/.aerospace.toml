@@ -12,10 +12,10 @@ key-mapping.preset = 'qwerty'
 [gaps]
 inner.horizontal = 8
 inner.vertical =   8
-outer.left =       8
-outer.bottom =     8
-outer.top =        8
-outer.right =      8
+outer.left = [ { monitor.'built-in' = 4 }, 8 ]
+outer.right = [ { monitor.'built-in' = 4 }, 8 ]
+outer.bottom = [ { monitor.'built-in' = 0 }, 8 ]
+outer.top = [ { monitor.'built-in' = 2 }, 8 ]
 
 [mode.main.binding]
 alt-shift-c = 'reload-config'
