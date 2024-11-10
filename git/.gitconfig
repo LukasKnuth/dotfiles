@@ -4,6 +4,7 @@
 	email = me@lknuth.dev
 [include]
 	path = .gitconfig-delta
+	path = .gitconfig-difftastic
 [includeIf "gitdir:~/work/"]
 	path = .gitconfig-work
 [commit]
@@ -45,8 +46,10 @@
 	ca = commit --amend
 	can = commit --amend --no-edit
 	conflicts = diff --name-only --diff-filter=U
-	di = diff
-	dis = diff --staged
+	ddi = diff
+	ddis = diff --staged
+	di = -c diff.external=difft diff
+	dis = -c diff.external=difft diff --staged
 	ft = fetch
 	fp = fetch --prune
 	h = "!f() { git log-custom-format --follow -- "$1"; }; f"

@@ -47,6 +47,8 @@ brew "cairo"
 brew "d2"
 # Secure runtime for JavaScript and TypeScript
 brew "deno"
+# Diff that understands syntax
+brew "difftastic"
 # Load/unload environment variables based on $PWD
 brew "direnv"
 # Text processing system for reStructuredText
