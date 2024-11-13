@@ -144,6 +144,3 @@ run = 'layout floating'
 [[on-window-detected]]
 if.app-id = 'com.tweaking4all.ApplePiBaker'
 run = 'layout floating'
-[[on-window-detected]]
-if.app-id = 'io.ganeshrvel.openmtp'
-run = 'layout floating'
