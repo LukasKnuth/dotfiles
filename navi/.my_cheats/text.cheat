@@ -1,0 +1,16 @@
+% text search replace
+
+# Find files with name
+fd <name> <folder>
+
+# Recursive list files in folder
+fd . <folder>
+
+# Find text in files
+rg <pattern> <folder>
+
+# Replace all occurrences in file
+sd <pattern> <replace> <file>
+
+# Replace all occurrences in all files of folder
+fd . <folder> --exec sd <pattern> <replace>
