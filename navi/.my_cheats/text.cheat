@@ -9,6 +9,9 @@ fd . <folder>
 # Find text in files
 rg <pattern> <folder>
 
+# Find text and open files in editor
+rg -l <pattern> <folder> | xargs $EDITOR
+
 # Replace all occurrences in file
 sd <pattern> <replace> <file>
 

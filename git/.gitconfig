@@ -33,6 +33,8 @@
 	gr = grep -Ii
 	# Git log supercharged
 	log-custom-format = log --pretty=format:"\"%C(yellow)%h %C(yellow)<%Cred%ad%C(yellow)>%C(auto)%d %Creset%s %C(cyan)[%an]%Creset\"" --graph --decorate
+	# Output all changed files without mode indicators for use with xargs
+	sx = "!f() { git status --porcelain $1 | cut -c4-; }; f"
 
 	# --- Shorthands ---
 	a = add
