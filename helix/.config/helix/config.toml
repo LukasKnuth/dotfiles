@@ -4,7 +4,22 @@ theme = "dark_plus_mod"
 mouse = false
 cursorline = true
 insert-final-newline = true
-auto-pairs = true
+auto-format = true
+
+[editor.auto-pairs]
+'(' = ')'
+'{' = '}'
+'[' = ']'
+'"' = '"'
+'`' = '`'
+'<' = '>'
+
+[editor.auto-save]
+focus-lost = true
+
+[editor.auto-save.after-delay]
+enable = true
+timeout = 5000
 
 [editor.statusline]
 left = ["mode", "spinner", "file-modification-indicator", "read-only-indicator", "file-name"]
