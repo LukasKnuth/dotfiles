@@ -1,0 +1,32 @@
+# Use Lexical over ElixirLS for Elixir
+[language-server.lexical]
+# NOTE: The absolute path to "lexical/_build/dev/package/lexical/bin" must be in the $PATH env variable.
+# Lexical is installed from source, so the absolute path is different on each system.
+# Use a ZShell setup script that is not shraed in the dotfiles, see Readme for more info.
+command = "start_lexical.sh"
+
+[[language]]
+name = "elixir"
+auto-format = true
+language-servers = ["lexical"]
+
+[[language]]
+name = "heex"
+auto-format = true
+language-servers = ["lexical"]
+
+[[language]]
+name = "markdown"
+# Use ltex-ls for Markdown (focus on Spellchecking)
+language-servers = [ "marksman", "ltex-ls" ]
+
+[[language]]
+name = "go"
+auto-format = true
+# Also create/remove imports automatically
+formatter = { command = "goimports" }
+
+[[language]]
+name = "git-commit"
+# Use ltex-ls for Spellchecking
+language-servers = [ "ltex-ls" ]
