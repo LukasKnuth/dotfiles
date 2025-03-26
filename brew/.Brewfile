@@ -23,12 +23,10 @@ brew "openssl@3"
 brew "apache-arrow"
 # GitOps Continuous Delivery for Kubernetes
 brew "argocd"
-# Automatic configure script builder
-brew "autoconf"
-# GNU File, Shell, and Text utilities
-brew "coreutils"
 # Extendable version manager with support for Ruby, Node.js, Erlang & more
 brew "asdf"
+# Automatic configure script builder
+brew "autoconf"
 # Use AWS IAM credentials to authenticate to Kubernetes
 brew "aws-iam-authenticator"
 # C parser in Python
@@ -43,6 +41,8 @@ brew "awscli"
 brew "bat"
 # Vector graphics library with cross-device output support
 brew "cairo"
+# GNU File, Shell, and Text utilities
+brew "coreutils"
 # Modern diagram scripting language that turns text to diagrams
 brew "d2"
 # Secure runtime for JavaScript and TypeScript
@@ -73,8 +73,6 @@ brew "pango"
 brew "tesseract"
 # Play, record, convert, and stream audio and video
 brew "ffmpeg"
-# Development kit for the Java programming language
-brew "openjdk"
 # XSL-FO print formatter for making PDF or PS documents
 brew "fop"
 # Libraries to talk to Microsoft SQL Server and Sybase databases
@@ -123,14 +121,10 @@ brew "helix"
 brew "helm"
 # Configurable static site generator
 brew "hugo"
-# Run and Test HTTP Requests with plain text and curl
-brew "hurl"
 # Lightweight and flexible command-line JSON processor
 brew "jq"
 # Handy way to save and run project-specific commands
 brew "just"
-# Utility to create k3s clusters on any local or remote VM
-brew "k3sup"
 # Kubernetes CLI To Manage Your Clusters In Style!
 brew "k9s"
 # Kubernetes command-line interface
@@ -147,8 +141,6 @@ brew "marksman"
 brew "minio-mc"
 # Interactive cheatsheet tool for the command-line
 brew "navi"
-# Modern shell for the GitHub era
-brew "nushell"
 # Cryptography and SSL/TLS Toolkit
 brew "openssl@1.1"
 # Open Visual Inference And Optimization toolkit for AI inference
@@ -161,8 +153,6 @@ brew "perl"
 brew "php"
 # Execute binaries from Python packages in isolated environments
 brew "pipx"
-# Cross-platform application and UI framework
-brew "qt@5"
 # PDF rendering library (based on the xpdf-3.0 code base)
 brew "poppler-qt5"
 # Interpreted, interactive, object-oriented programming language
@@ -211,8 +201,6 @@ cask "1password"
 cask "1password-cli"
 # AeroSpace is an i3-like tiling window manager for macOS
 cask "aerospace"
-# GPU-accelerated terminal emulator
-cask "alacritty"
 # Application launcher and productivity software
 cask "alfred"
 # Automatic tiling window manager similar to xmonad
@@ -225,8 +213,6 @@ cask "audacity"
 cask "betterdisplay"
 # Opensource IDE for exploring and testing api's
 cask "bruno"
-# E-books management software
-cask "calibre"
 # Allows switching between application windows
 cask "contexts"
 # API documentation browser and code snippet manager
@@ -248,12 +234,8 @@ cask "gimp"
 cask "google-chrome"
 # Set of tools to manage resources and applications hosted on Google Cloud
 cask "google-cloud-sdk"
-# Podcast client
-cask "gpodder"
 # Vector graphics editor
 cask "inkscape"
-# Terminal emulator as alternative to Apple's Terminal app
-cask "iterm2"
 # Menu bar calendar
 cask "itsycal"
 # App to manage software development and track bugs
@@ -278,8 +260,6 @@ cask "openmtp"
 cask "rar"
 # Imaging utility to install operating systems to a microSD card
 cask "raspberry-pi-imager"
-# Video editor
-cask "shotcut"
 # Team communication and collaboration software
 cask "slack"
 # Music streaming service
@@ -302,8 +282,6 @@ cask "vlc"
 cask "wezterm"
 # Network protocol analyzer
 cask "wireshark"
-# Multiplayer code editor
-cask "zed"
 vscode "aaron-bond.better-comments"
 vscode "bbenoist.nix"
 vscode "be5invis.toml"
