@@ -6,7 +6,7 @@ local act = wezterm.action
 config.font = wezterm.font 'JetBrains Mono'
   -- NOTE: Ligatures are ON be default
 config.font_size = 22.0
-config.color_scheme = 'Afterglow'
+config.color_scheme = 'Catppuccin Mocha'
 
 -- GUI
 config.enable_tab_bar = false
