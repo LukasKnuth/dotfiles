@@ -144,8 +144,5 @@ run = 'layout floating'
 if.app-id = 'org.videolan.vlc'
 run = 'layout floating'
 [[on-window-detected]]
-if.app-id = 'org.inkscape.Inkscape'
-run = 'layout floating'
-[[on-window-detected]]
 if.app-id = 'com.tweaking4all.ApplePiBaker'
 run = 'layout floating'
