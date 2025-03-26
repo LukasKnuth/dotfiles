@@ -1,4 +1,4 @@
-theme = "dark_plus_mod"
+theme = "catppuccin_mocha"
 
 [editor]
 mouse = false
@@ -22,9 +22,9 @@ enable = true
 timeout = 5000
 
 [editor.statusline]
-left = ["mode", "spinner", "file-modification-indicator", "read-only-indicator", "file-name"]
+left = ["spinner", "read-only-indicator", "file-name"]
 center = []
-right = ["version-control", "spacer", "position-percentage"]
+right = ["position-percentage"]
 
 [editor.cursor-shape]
 normal = "block"
