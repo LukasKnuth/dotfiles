@@ -6,14 +6,6 @@ cursorline = true
 insert-final-newline = true
 auto-format = true
 
-[editor.auto-pairs]
-'(' = ')'
-'{' = '}'
-'[' = ']'
-'"' = '"'
-'`' = '`'
-'<' = '>'
-
 [editor.auto-save]
 focus-lost = true
 
