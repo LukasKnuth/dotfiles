@@ -215,7 +215,7 @@ cask "applepi-baker"
 cask "audacity"
 # Display management tool
 cask "betterdisplay"
-# Opensource IDE for exploring and testing api's
+# Open source IDE for exploring and testing APIs
 cask "bruno"
 # Allows switching between application windows
 cask "contexts"
@@ -240,8 +240,6 @@ cask "google-chrome"
 cask "google-cloud-sdk"
 # Vector graphics editor
 cask "inkscape"
-# Menu bar calendar
-cask "itsycal"
 # App to manage software development and track bugs
 cask "linear-linear"
 # Code notebooks for Elixir developers
