@@ -115,12 +115,16 @@ brew "git-lfs"
 brew "qt"
 # Command-driven, interactive function plotting
 brew "gnuplot"
+# Open-source build automation tool based on the Groovy and Kotlin DSL
+brew "gradle"
 # Post-modern modal text editor
 brew "helix"
 # Kubernetes package manager
 brew "helm"
 # Configurable static site generator
 brew "hugo"
+# Java language specific implementation of the Language Server Protocol
+brew "jdtls"
 # Lightweight and flexible command-line JSON processor
 brew "jq"
 # Handy way to save and run project-specific commands
