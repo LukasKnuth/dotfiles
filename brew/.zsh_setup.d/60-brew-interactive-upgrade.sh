@@ -8,6 +8,7 @@ brew-pick() {
   if [[ -n "$outdated" ]]
   then
     fzf --multi \
+      --preview 'brew info {} --json | jq ".[] | pick(.name, .desc, .versions.stable, .installed.[].version)"' \
       --bind 'enter:transform:(( FZF_SELECT_COUNT )) && echo accept || echo ignore' \
       <<< $outdated | xargs --no-run-if-empty brew upgrade
   fi
