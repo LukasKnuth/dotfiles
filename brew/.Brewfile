@@ -33,8 +33,6 @@ brew "aws-iam-authenticator"
 brew "pycparser"
 # C Foreign Function Interface for Python
 brew "cffi"
-# Interpreted, interactive, object-oriented programming language
-brew "python@3.12"
 # Official Amazon AWS command-line interface
 brew "awscli"
 # Clone of cat(1) with syntax highlighting and Git integration
@@ -67,6 +65,8 @@ brew "gnutls"
 brew "harfbuzz"
 # Image processing and image analysis library
 brew "leptonica"
+# Interpreted, interactive, object-oriented programming language
+brew "python@3.12"
 # Framework for layout and rendering of i18n text
 brew "pango"
 # OCR (Optical Character Recognition) engine
@@ -75,6 +75,8 @@ brew "tesseract"
 brew "ffmpeg"
 # XSL-FO print formatter for making PDF or PS documents
 brew "fop"
+# Manage Procfile-based applications
+brew "foreman"
 # Libraries to talk to Microsoft SQL Server and Sybase databases
 brew "freetds"
 # Command-line fuzzy finder written in Go
@@ -155,6 +157,8 @@ brew "p7zip"
 brew "perl"
 # General-purpose scripting language
 brew "php"
+# Rename your files using your favorite text editor
+brew "pipe-rename"
 # Execute binaries from Python packages in isolated environments
 brew "pipx"
 # PDF rendering library (based on the xpdf-3.0 code base)
@@ -163,6 +167,8 @@ brew "poppler-qt5"
 brew "python@3.10"
 # Interpreted, interactive, object-oriented programming language
 brew "python@3.9"
+# Generic machine emulator and virtualizer
+brew "qemu"
 # File browser
 brew "ranger"
 # Persistent key-value database, with built-in net interface
