@@ -36,7 +36,7 @@ setopt SHARE_HISTORY          # share command history data
 # Load User configuration and/or plugins.
 # Anybody can add a file/symlink into this directory to extend the shell.
 for script in $HOME/.zsh_setup.d/*.sh; do
-  [[ ${script:t} != '~'* ]] || continue # ignore files starting with tilde
+  [[ ${script:t} != '_'* ]] || continue # ignore files starting with underscore
   source "$script"
 done
 unset script
