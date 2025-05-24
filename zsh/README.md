@@ -1,47 +1,35 @@
-# Z-Shell
+# Zsh
 
-My main Shell is Z-Shell.
-I use [oh-my-zsh](https://github.com/ohmyzsh/ohmyzsh) as my zsh framework.
+My main shell is Zsh.
+I use no frameworks or package managers.
 
 ## Installation
 
-```bash
-brew install zsh # or other means
-sh -c "$(curl -fsSL https://install.ohmyz.sh/)" # clones local .oh-my-zsh repo
-# Install custom plugins
-stow zsh # load my config and theme
-```
+This setup has the following dependencies.
+These **MUST** be installed and in `PATH`:
 
-My current setup has the following additional dependencies:
-
+- [Zsh](https://www.zsh.org/) - on macOS, verify the version isn't too old
 - [Starship](https://starship.rs) for the prompt
 - [fzf](https://github.com/junegunn/fzf) for better history search
 
 The setup does **NOT** require any NerdFont fonts to be used by the Terminal.
 
-## Plugins
+### Plugins
 
-A few custom plugins are used which do not ship with oh-my-zsh by default:
+Only a few plugins are used.
+They are loaded via the `~/.zsh_setup.d` mechanism.
 
 * [zsh-autosuggestions](https://github.com/zsh-users/zsh-autosuggestions) - suggests commands from history on typing
 * [zsh-vi-mode](https://github.com/jeffreytse/zsh-vi-mode) - allows navigating in prompt with VI keybinds
 
-These are shipped with this config for ease of use.
+These are included in this repository directly for ease of use.
 
-## Update
+### Helpers
 
-oh-my-zsh is configured to remind about updates automatically.
-
-Alternatively, `omz update` manually fetches the newest version from github and prints all changes/fixes
-
-## Built-in
-
-Most of these come built into oh-my-zsh as nice helpers to be aware of:
+Some helpers are setup to make working with Zsh nicer
 
 - Pipe into `clipcopy` to copy it to the clipboard (automatically picks correct tool)
 - Redirect from `clippaste` to past from the clipboard (automatically picks correct tool)
-- `cd -` takes you to the previous directory. `cd -2` takes you two directories back, etc
-- To open something with its default application _on the desktop, use the `open` function
 - To get absolute path to a file, run `realpath file`
 
 ## References
@@ -50,3 +38,5 @@ Most of these come built into oh-my-zsh as nice helpers to be aware of:
   - Ideas and examples of how to configure ZSH _without_ oh-my-zsh
 - https://zsh.sourceforge.io/Doc/Release/Options.html
   - List of ZSH _built-in_ options to influence how the shell handles
+- https://github.com/z0rc/dotfiles/
+  - Dotfiles repo that is also without any framework
