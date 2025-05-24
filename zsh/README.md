@@ -12,12 +12,12 @@ sh -c "$(curl -fsSL https://install.ohmyz.sh/)" # clones local .oh-my-zsh repo
 stow zsh # load my config and theme
 ```
 
-## Theme
+My current setup has the following additional dependencies:
 
-My theme is "gitster", which is bundled with this directory.
-It's a custom theme made by [Shashank Mehta](https://github.com/shashankmehta/dotfiles/blob/master/thesetup/zsh/.oh-my-zsh/custom/themes/gitster.zsh-theme).
+- [Starship](https://starship.rs) for the prompt
+- [fzf](https://github.com/junegunn/fzf) for better history search
 
-The theme does **NOT** require any NerdFont fonts to be used by the Terminal.
+The setup does **NOT** require any NerdFont fonts to be used by the Terminal.
 
 ## Plugins
 

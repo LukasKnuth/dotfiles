@@ -1,9 +1,6 @@
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
 
-# See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
-ZSH_THEME="gitster"
-
 # Change the command execution timestamp shown in the history command output.
 HIST_STAMPS="dd.mm.yyyy"
 
@@ -28,3 +25,6 @@ for script in $HOME/.zsh_setup.d/*.sh; do
   [[ ${script:t} != '~'* ]] || continue # ignore files starting with tilde
   source "$script"
 done
+
+# Load the prompt
+eval "$(starship init zsh)"
