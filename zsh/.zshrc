@@ -31,8 +31,6 @@ setopt HIST_IGNORE_SPACE      # ignore commands that start with space
 setopt HIST_VERIFY            # show command with history expansion to user before running it
 setopt SHARE_HISTORY          # share command history data
 
-# plugins=(brew direnv asdf fzf zsh-autosuggestions zsh-vi-mode)
-
 # Load User configuration and/or plugins.
 # Anybody can add a file/symlink into this directory to extend the shell.
 for script in $HOME/.zsh_setup.d/*.sh; do
