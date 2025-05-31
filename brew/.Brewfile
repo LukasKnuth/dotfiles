@@ -181,6 +181,8 @@ brew "sd"
 brew "shellcheck"
 # Autoformat shell script source code
 brew "shfmt"
+# Cross-shell prompt for astronauts
+brew "starship"
 # Organize software neatly under a single directory tree (e.g. /usr/local)
 brew "stow"
 # Secures, stores, and tightly controls access to secrets
