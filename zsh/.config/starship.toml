@@ -8,11 +8,11 @@ success_symbol = '[➜](bold green)'
 error_symbol = '[➜](bold red)'
 
 [directory]
-style = 'white'
+style = 'bold white'
 
 [git_branch]
 style = 'cyan'
-format = '[$branch(:$remote_branch)]($style) '
+format = 'on [$branch(:$remote_branch)]($style) '
 
 [git_status]
 style = 'yellow'
