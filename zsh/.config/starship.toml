@@ -1,7 +1,7 @@
 "$schema" = 'https://starship.rs/config-schema.json'
 
 add_newline = false
-format = "$character($username) $directory($git_branch($git_state)$git_status)$jobs"
+format = "$character($username)$directory($git_branch($git_state)$git_status)$jobs"
 
 [character]
 success_symbol = '[➜](bold green)'
@@ -16,7 +16,7 @@ format = 'on [$branch(:$remote_branch)]($style) '
 
 [git_status]
 style = 'yellow'
-format = '([$all_status$ahead_behind]($style) )'
+format = '[$all_status$ahead_behind]($style) '
 # Just use normal git status short indicators: https://git-scm.com/docs/git-status#_output
 conflicted = 'C'
 untracked = '?'
