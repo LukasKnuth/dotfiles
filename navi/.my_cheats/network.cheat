@@ -1,0 +1,12 @@
+% network
+
+# TCP listening on port
+lsof -Pn -iTCP:<port>
+
+# UDP listening on port
+lsof -Pn -iUDP:<port>
+
+# Add loopback IP (127.0.0.0/8)
+; Probably needs sudo to work.
+; Should only be necessary on macOS, on Linux you can just bind
+ifconfig lo0 alias <ip> up
