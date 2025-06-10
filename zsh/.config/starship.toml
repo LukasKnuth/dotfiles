@@ -16,7 +16,7 @@ format = 'on [$branch(:$remote_branch)]($style) '
 
 [git_status]
 style = 'yellow'
-format = '[$all_status$ahead_behind]($style) '
+format = '([$all_status$ahead_behind]($style) )'
 # Just use normal git status short indicators: https://git-scm.com/docs/git-status#_output
 conflicted = 'C'
 untracked = '?'
