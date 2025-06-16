@@ -9,11 +9,8 @@ asdf list <plugin>
 # Install specific version
 asdf install <plugin> <version>
 
-# Set LOCAL version
-asdf local <plugin> <installed>
-
-# Set GLOBAL version
-asdf global <plugin> <installed>
+# Set version for directory
+asdf set <plugin> <installed>
 
 # Get current versions
 asdf current
