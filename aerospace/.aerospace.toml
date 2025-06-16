@@ -57,13 +57,12 @@ alt-shift-2 = 'move-node-to-workspace --focus-follows-window 2'
 # binding mode to manipulate containers
 alt-shift-o = 'mode service'
 [mode.service.binding]
-r = ['flatten-workspace-tree', 'balance-sizes']
 f = 'layout floating tiling'
 s = 'layout accordion tiling'
 
 u = 'resize smart +70'
 i = 'resize smart -70'
-o = 'balance-sizes'
+r = 'balance-sizes'
 
 h = 'join-with left'
 j = 'join-with down'
