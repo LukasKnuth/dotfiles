@@ -1,0 +1,7 @@
+% macos
+
+# Remove quarantine bit from downloaded file
+; Only use on files from verified reliable sources...
+; NOTE: This works even if "System Settings" > "Privacy & Security" >
+; "Allow applications from" is set to "App Store & Known Developers"
+xattr -d com.apple.quarantine <file>
