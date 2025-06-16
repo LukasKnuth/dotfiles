@@ -4,7 +4,9 @@ local act = wezterm.action
 
 -- Font / Text
 config.font = wezterm.font 'JetBrains Mono'
-  -- NOTE: Ligatures are ON be default
+-- NOTE: Ligatures are ON be default
+-- Enable slashed zeros
+config.harfbuzz_features = { 'zero' }
 config.font_size = 22.0
 config.color_scheme = 'Catppuccin Mocha'
 
