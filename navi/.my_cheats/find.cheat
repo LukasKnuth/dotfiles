@@ -1,0 +1,39 @@
+% find search
+
+; NOTE: default ignores hidden files and `.gitignore`
+; GLOBAL: use `-g` to change from regex patterns to globs
+; GLOBAL: use `-x` to run a given command _for each_ result
+; GLOBAL: use `-X` to run a given command _for all_ results 
+
+# Recursive list in folder
+fd -t <type> . <folder>
+
+# Find by file type
+; Can be specified multiple times
+fd -t <type>
+
+# Find type by extension
+; `pattern` is Regex by default
+fd -t <type> -e '<pattern>'
+
+# Find type, except
+; Can be specified multiple times
+; `pattern` is Regex by default
+fd -t <type> -E '<pattern>'
+
+# Find by file size
+fd -t <type> -S <operator><number><unit>
+
+# Find by change date/time
+; There are many more options, see manpage
+; Absolute time must be RFC3339
+fd -t <type> --<date-operator> <date-or-duration>
+
+# Find and open in editor
+fd -t <type> '<pattern>' -X $EDITOR
+
+$ type: echo -e "file\ndir\nsymlink\nexecutable\nempty\nsocket\npipe\nblock-device\nchar-device"
+$ operator: echo -e "+\n-"
+$ unit: echo -e "b\nk\nm\ng\nt"
+$ date-operator: echo -e "newer\nolder"
+

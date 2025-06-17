@@ -1,19 +1,19 @@
 % text search replace
 
-# Find files with name
-fd <name> <folder>
-
-# Recursive list files in folder
-fd . <folder>
-
 # Find text in files
-rg <pattern> <folder>
+rg '<pattern>' <folder>
 
 # Find text and open files in editor
-rg -l <pattern> <folder> | xargs $EDITOR
+rg -l '<pattern>' <folder> | xargs $EDITOR
 
-# Replace all occurrences in file
-sd <pattern> <replace> <file>
+# Replace all occurrences in files
+sd '<pattern>' '<replace>' <files>
 
-# Replace all occurrences in all files of folder
-fd . <folder> --exec sd <pattern> <replace>
+# Extract text from STDIN
+; Add this to a pipe to work
+rg '<pattern>' -o
+
+# Extract text from STDIN and change output
+; Add this to a pipe to work
+; Use `$<num>` to use values from capture groups
+rg '<pattern>' -o -p '<format>'
