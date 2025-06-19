@@ -139,8 +139,8 @@ brew "kubernetes-cli"
 brew "libdap"
 # C XSLT library for GNOME
 brew "libxslt"
-# LSP for LanguageTool with support for Latex, Markdown and Others
-brew "ltex-ls"
+# LTeX+ Language Server: maintained fork of LTeX Language Server
+brew "ltex-ls-plus"
 # Language Server Protocol for Markdown
 brew "marksman"
 # Replacement for ls, cp and other commands for object storage

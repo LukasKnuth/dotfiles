@@ -18,7 +18,7 @@ language-servers = ["lexical"]
 [[language]]
 name = "markdown"
 # Use ltex-ls for Markdown (focus on Spellchecking)
-language-servers = [ "marksman", "ltex-ls" ]
+language-servers = [ "marksman", "ltex-ls-plus" ]
 
 [[language]]
 name = "go"
@@ -29,4 +29,4 @@ formatter = { command = "goimports" }
 [[language]]
 name = "git-commit"
 # Use ltex-ls for Spellchecking
-language-servers = [ "ltex-ls" ]
+language-servers = [ "ltex-ls-plus" ]
