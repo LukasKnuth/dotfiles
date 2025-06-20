@@ -210,6 +210,8 @@ cask "1password"
 cask "1password-cli"
 # AeroSpace is an i3-like tiling window manager for macOS
 cask "aerospace"
+# Professional graphic design software
+cask "affinity-designer"
 # Application launcher and productivity software
 cask "alfred"
 # Automatic tiling window manager similar to xmonad
@@ -255,6 +257,8 @@ cask "localsend"
 cask "loom"
 # Tag editor for digital music
 cask "meta"
+# Tool to create text-based art
+cask "monodraw"
 # Desktop client for the Matrix protocol
 cask "nheko"
 # Open-source software for live streaming and screen recording
