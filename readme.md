@@ -16,7 +16,7 @@ stow -D zsh
 stow zsh --adopt
 
 # After doing some linking/unlinking
-chkstow --badlinks
+chkstow --target $HOME --badlinks
 ```
 
 ## Structure
