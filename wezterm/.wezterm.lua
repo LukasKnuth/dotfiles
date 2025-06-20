@@ -2,6 +2,11 @@ local wezterm = require 'wezterm'
 local config = wezterm.config_builder()
 local act = wezterm.action
 
+-- Platform Helpers
+local is_macos = function()
+  return wezterm.target_triple:find("darwin") ~= nil
+end
+
 -- Font / Text
 config.font = wezterm.font 'JetBrains Mono'
 -- NOTE: Ligatures are ON be default
@@ -21,15 +26,16 @@ config.window_decorations = "RESIZE"
 -- Keybindings
 config.disable_default_key_bindings = true
 -- NOTE: run `wezterm show-keys --lua` to generate the full default list
+local mod_key = is_macos() and 'SUPER' or 'CTRL'
 config.keys = {
-  { key = 'c', mods = 'SUPER', action = act.CopyTo 'Clipboard' },
-  { key = 'v', mods = 'SUPER', action = act.PasteFrom 'Clipboard' },
-  { key = 'f', mods = 'SUPER', action = act.Search 'CurrentSelectionOrEmptyString' },
-  { key = 'k', mods = 'SUPER', action = act.ClearScrollback 'ScrollbackAndViewport' },
-  { key = 'n', mods = 'SUPER', action = act.SpawnWindow },
-  { key = 'w', mods = 'SUPER', action = act.CloseCurrentTab { confirm = true } },
-  { key = 'p', mods = 'SUPER', action = act.ActivateCommandPalette },
-  { key = 'u', mods = 'SUPER', action = act.CharSelect { copy_on_select = true, copy_to = 'ClipboardAndPrimarySelection' } },
+  { key = 'c', mods = mod_key, action = act.CopyTo 'Clipboard' },
+  { key = 'v', mods = mod_key, action = act.PasteFrom 'Clipboard' },
+  { key = 'f', mods = mod_key, action = act.Search 'CurrentSelectionOrEmptyString' },
+  { key = 'k', mods = mod_key, action = act.ClearScrollback 'ScrollbackAndViewport' },
+  { key = 'n', mods = mod_key, action = act.SpawnWindow },
+  { key = 'w', mods = mod_key, action = act.CloseCurrentTab { confirm = true } },
+  { key = 'p', mods = mod_key, action = act.ActivateCommandPalette },
+  { key = 'u', mods = mod_key, action = act.CharSelect { copy_on_select = true, copy_to = 'ClipboardAndPrimarySelection' } },
   { key = 'UpArrow', mods = 'SHIFT', action = act.ScrollByPage(-0.75) },
   { key = 'DownArrow', mods = 'SHIFT', action = act.ScrollByPage(0.75) },
 }
