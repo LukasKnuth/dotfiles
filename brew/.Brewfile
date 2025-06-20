@@ -1,4 +1,3 @@
-tap "fluxcd/tap"
 tap "hashicorp/tap"
 tap "homebrew/bundle"
 tap "homebrew/cask"
@@ -23,6 +22,8 @@ brew "openssl@3"
 brew "apache-arrow"
 # GitOps Continuous Delivery for Kubernetes
 brew "argocd"
+# Distributed revision control system
+brew "git"
 # Extendable version manager with support for Ruby, Node.js, Erlang & more
 brew "asdf"
 # Automatic configure script builder
@@ -65,8 +66,6 @@ brew "gnutls"
 brew "harfbuzz"
 # Image processing and image analysis library
 brew "leptonica"
-# Interpreted, interactive, object-oriented programming language
-brew "python@3.12"
 # Framework for layout and rendering of i18n text
 brew "pango"
 # OCR (Optical Character Recognition) engine
@@ -107,8 +106,6 @@ brew "poppler"
 brew "gdal"
 # GitHub command-line tool
 brew "gh"
-# Distributed revision control system
-brew "git"
 # Syntax-highlighting pager for git and diff output
 brew "git-delta"
 # Git extension for versioning large files
@@ -166,6 +163,8 @@ brew "poppler-qt5"
 # Interpreted, interactive, object-oriented programming language
 brew "python@3.10"
 # Interpreted, interactive, object-oriented programming language
+brew "python@3.12"
+# Interpreted, interactive, object-oriented programming language
 brew "python@3.9"
 # Generic machine emulator and virtualizer
 brew "qemu"
@@ -201,8 +200,6 @@ brew "yarn"
 brew "yq"
 # Fish-like fast/unobtrusive autosuggestions for zsh
 brew "zsh-autosuggestions"
-# Flux CLI
-brew "fluxcd/tap/flux"
 # Terraform Language Server
 brew "hashicorp/tap/terraform-ls"
 # CLI for out-of-band management of Kubernetes nodes created by Talos
