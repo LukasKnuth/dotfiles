@@ -72,6 +72,8 @@ brew "pango"
 brew "tesseract"
 # Play, record, convert, and stream audio and video
 brew "ffmpeg"
+# User-friendly command-line shell for UNIX-like operating systems
+brew "fish"
 # XSL-FO print formatter for making PDF or PS documents
 brew "fop"
 # Manage Procfile-based applications

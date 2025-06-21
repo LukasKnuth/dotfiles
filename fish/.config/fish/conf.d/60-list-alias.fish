@@ -1,0 +1,6 @@
+alias l='eza --group-directories-first --long --header --git --no-time --blocksize --no-filesize'
+alias la='l -a'
+alias ls='eza --across --classify'
+alias lsa='ls -a'
+alias lt='eza -T --git-ignore'
+alias lta='lt -a'
