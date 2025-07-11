@@ -6,7 +6,7 @@ rg '<pattern>' <folder>
 # Find text and open files in editor
 rg -l '<pattern>' <folder> | xargs $EDITOR
 
-# Replace all occurrences in files
+# Find and replace in files
 sd '<pattern>' '<replace>' <files>
 
 # Extract text from STDIN

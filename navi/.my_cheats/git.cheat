@@ -9,3 +9,16 @@ git checkout <branch> <path>
 # Create patch of changes
 ; Forward to file to create applyable patch
 git format-patch <from>..<to> --stdout
+
+# Show historic filesizes for path
+git log --stat <path>
+
+# Delete remote branch
+git push -d <remote> <branch>
+
+# Delete remote tag
+git push -d <remote> <tag>
+
+$ remote: git remote
+$ branch: git branch --format='%(refname:short)'
+$ tag: git tag
