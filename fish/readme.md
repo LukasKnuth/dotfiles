@@ -3,6 +3,18 @@
 I have moved from Zsh to Fish, mostly for its simplicity.
 It includes all features I want out of the box.
 
+## Standard Shell
+
+on macOS:
+
+1. Install `fish` via `brew` (see Brewfile in this repo)
+2. Add the path (default: `/opt/homebrew/bin/fish`) to `/etc/shells` (requires root)
+3. Activate for account using `chsh -s /opt/homebrew/bin/fish`
+
+Any terminal on the system (including default iTerm) should now use Fish.
+
+NOTE: Not all Termianls support all features of Fish/tools used in my config. Use Wezterm (see this Repo) for best results.
+
 ## Dependencies
 
 To make the whole Fish configuration work, the following tools must also be installed on the system:
