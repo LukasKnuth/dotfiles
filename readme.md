@@ -13,7 +13,9 @@ stow fish
 stow -D fish
 
 # To replace existing config with link
-stow fish --adopt
+mkdir -p tool/path/to
+touch tool/path/to/config.file
+stow tool --adopt
 
 # After doing some linking/unlinking
 chkstow --target $HOME --badlinks
