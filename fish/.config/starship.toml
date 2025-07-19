@@ -1,0 +1,29 @@
+"$schema" = 'https://starship.rs/config-schema.json'
+
+add_newline = false
+format = "$character($username)$directory($git_branch($git_state)$git_status)$jobs"
+
+[character]
+success_symbol = '[➜](bold green)'
+error_symbol = '[➜](bold red)'
+
+[directory]
+style = 'bold white'
+
+[git_branch]
+style = 'cyan'
+format = 'on [$branch(:$remote_branch)]($style) '
+
+[git_status]
+style = 'yellow'
+format = '([$all_status$ahead_behind]($style) )'
+# Just use normal git status short indicators: https://git-scm.com/docs/git-status#_output
+conflicted = 'C'
+untracked = '?'
+modified = 'M'
+staged = 'A'
+renamed = 'R'
+deleted = 'D'
+typechanged = 'T'
+# Shows up if there is _anything_ in the stash still.
+stashed = 'S'
