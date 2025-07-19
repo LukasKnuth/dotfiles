@@ -9,6 +9,8 @@ tap "localsend/localsend"
 tap "lukasknuth/tap", "git@github.com:LukasKnuth/homebrew-tap.git"
 tap "nikitabobko/tap"
 tap "siderolabs/tap"
+# Generic-purpose lossless compression algorithm by Google
+brew "brotli"
 # TIFF library and utilities
 brew "libtiff"
 # Image format providing lossless and lossy compression for web images
@@ -189,8 +191,6 @@ brew "starship"
 brew "stow"
 # Secures, stores, and tightly controls access to secrets
 brew "vault"
-# Vi 'workalike' with many additional features
-brew "vim"
 # Executes a program periodically, showing output fullscreen
 brew "watch"
 # Internet file retriever
