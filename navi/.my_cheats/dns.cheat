@@ -1,0 +1,12 @@
+% dns
+
+# Get record from default server
+dig +short <query> <type>
+
+# Get record via IPv6 from default server
+dig -6 +short <query> <type>
+
+# Get record from specific server
+dig +short @<server> <query> <type>
+
+$ type: echo -e "A\nAAAA\nCNAME\nMX"
