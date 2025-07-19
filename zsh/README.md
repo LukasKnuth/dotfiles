@@ -1,6 +1,8 @@
 # Zsh
 
-My main shell is Zsh.
+> [!NOTE]
+> I recently switched to the [Fish Shell](../fish) as my main shell.
+
 I use no frameworks or package managers.
 
 ## Installation
@@ -13,6 +15,11 @@ These **MUST** be installed and in `PATH`:
 - [fzf](https://github.com/junegunn/fzf) for better history search
 
 The setup does **NOT** require any NerdFont fonts to be used by the Terminal.
+
+### Extensions
+
+The main `.zshrc` is set up to source files from `~/.zsh_setup.d`.
+Files are sourced in natural sorting order, as outlined in the main repo Readme.
 
 ### Plugins
 

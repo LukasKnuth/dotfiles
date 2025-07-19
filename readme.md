@@ -7,13 +7,13 @@ I use [GNU Stow](https://www.gnu.org/software/stow/manual/stow.html#Installing-P
 cd dotfiles
 
 # Link config into HOME
-stow zsh
+stow fish
 
 # Unlink config
-stow -D zsh
+stow -D fish
 
 # To replace existing config with link
-stow zsh --adopt
+stow fish --adopt
 
 # After doing some linking/unlinking
 chkstow --target $HOME --badlinks
@@ -46,20 +46,20 @@ Is placed under:
 
 ### Convention: Shell setup
 
-Every tool can add scripts to be included in shell startup into the `.zsh_setup.d` directory, like this:
+Every tool can add scripts to be included in shell startup into the `~/.config/fish/conf.d` directory, like this:
 
 ```bash
 /home/lukas/dotfiles/git
 ├─ .gitconfig
-└─ .zsh_setup.d
+└─ .config/fish/conf.d
   └─ 60-git-aliases.sh
 ```
 
-These scripts are then linked into `~/.zsh_setup.d` when the application config is linked via `stow`.
-The `.zshrc` will source all files from this directory on launch.
+These scripts are then linked into `~/.config/fish/conf.d` when the application config is linked via `stow`.
+The main Fish config will source all files from this directory on launch.
 
 This allows applications to run additional setup logic only when its config is actually linked.
-This keeps the zsh config short and free of dependencies on installed tools.
+This keeps the Fish config short and free of dependencies on installed tools.
 
 **What do the numbers mean?**
 This is modeled after init scripts in Unix systems used to work.
@@ -78,7 +78,7 @@ Every script-name can start with a number, which influences the file-ordering an
 
 These files go into different directories to be picked up by the specific tools.
 
-* `$HOME` resolves to to root home directory, like `/home/lukas`
+* `$HOME` resolves to the root home directory, like `/home/lukas`
 * `$XDG_CONFIG_HOME` resolves to something like `/home/lukas/.config`
 
 ## Inspiration
