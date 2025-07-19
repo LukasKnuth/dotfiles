@@ -1,3 +1,4 @@
+tap "benbjohnson/litestream"
 tap "hashicorp/tap"
 tap "homebrew/bundle"
 tap "homebrew/cask"
@@ -202,6 +203,8 @@ brew "yarn"
 brew "yq"
 # Fish-like fast/unobtrusive autosuggestions for zsh
 brew "zsh-autosuggestions"
+# Streaming replication for SQLite
+brew "benbjohnson/litestream/litestream"
 # Terraform Language Server
 brew "hashicorp/tap/terraform-ls"
 # CLI for out-of-band management of Kubernetes nodes created by Talos
