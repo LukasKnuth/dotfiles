@@ -7,7 +7,6 @@ function brew-pick --wraps brew -d "Interactively pick casks/formulae to upgrade
     if test -n "$outdated"
         printf "%s\n" $outdated | fzf --multi \
             --preview 'brew info {} --json | jq ".[] | pick(.name, .desc, .versions.stable, .installed.[].version)"' \
-            # TODO does the tripple <<< work in fish? What to use instead?
-            --bind 'enter:transform:(( FZF_SELECT_COUNT )) && echo accept || echo ignore' | xargs --no-run-if-empty brew upgrade
+            --bind 'enter:transform:test $FZF_SELECT_COUNT -ne 0 && echo accept || echo ignore' | xargs --no-run-if-empty brew upgrade
     end
 end
