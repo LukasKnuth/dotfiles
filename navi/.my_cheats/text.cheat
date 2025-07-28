@@ -1,4 +1,7 @@
 % text search replace
+; NOTE: The <folder> must point to specific files. This can either be a glob or a list
+; `sd` does NOT update all files recursively!
+; Use `--preview` to not perform the action but preview it instead.
 
 # Find text in files
 rg '<pattern>' <folder>
@@ -8,6 +11,9 @@ rg -l '<pattern>' <folder> | xargs $EDITOR
 
 # Find and replace in files
 sd '<pattern>' '<replace>' <files>
+
+# Find and delete in files
+sd '<pattern>\r?\n' '' <files>
 
 # Extract text from STDIN
 ; Add this to a pipe to work

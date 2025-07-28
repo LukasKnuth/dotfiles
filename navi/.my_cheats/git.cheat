@@ -19,6 +19,12 @@ git push -d <remote> <branch>
 # Delete remote tag
 git push -d <remote> <tag>
 
+# List branches merged into
+git branch --merged <branch>
+
+# List branches NOT merged into
+git branch --no-merged <branch>
+
 $ remote: git remote
 $ branch: git branch --format='%(refname:short)'
 $ tag: git tag
