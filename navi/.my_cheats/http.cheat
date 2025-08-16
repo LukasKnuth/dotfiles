@@ -1,0 +1,15 @@
+% http
+
+# Request to specific IP
+; E.g. to send a request without DNS
+curl -H "Host: <host>" '<ip>'
+
+# Debug HTTP request
+; Redirect stdout to /dev/null will only print connection and response information
+curl -v '<target>' > /dev/null
+
+# Submit file as body
+curl -X <method> -H "Content-Type: <content_type>" -d @<file> '<target>'
+
+$ method: echo -e "POST\nPUT\nPATCH"
+$ content_type: echo -e "application/json\n"

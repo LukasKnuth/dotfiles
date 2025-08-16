@@ -25,6 +25,11 @@ git branch --merged <branch>
 # List branches NOT merged into
 git branch --no-merged <branch>
 
+# List files changed in current branch
+; replace "main" with any other start reference
+; replace "HEAD" with any other end referece
+git show --pretty="" --name-only main..HEAD
+
 $ remote: git remote
 $ branch: git branch --format='%(refname:short)'
 $ tag: git tag
