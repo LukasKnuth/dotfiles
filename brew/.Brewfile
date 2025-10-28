@@ -37,6 +37,8 @@ brew "aws-iam-authenticator"
 brew "awscli"
 # Clone of cat(1) with syntax highlighting and Git integration
 brew "bat"
+# Deduplicating archiver with compression and authenticated encryption
+brew "borgbackup"
 # Vector graphics library with cross-device output support
 brew "cairo"
 # C parser in Python
