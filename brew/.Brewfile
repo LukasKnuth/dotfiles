@@ -33,16 +33,16 @@ brew "asdf"
 brew "autoconf"
 # Use AWS IAM credentials to authenticate to Kubernetes
 brew "aws-iam-authenticator"
-# C parser in Python
-brew "pycparser"
-# C Foreign Function Interface for Python
-brew "cffi"
 # Official Amazon AWS command-line interface
 brew "awscli"
 # Clone of cat(1) with syntax highlighting and Git integration
 brew "bat"
 # Vector graphics library with cross-device output support
 brew "cairo"
+# C parser in Python
+brew "pycparser"
+# C Foreign Function Interface for Python
+brew "cffi"
 # GNU File, Shell, and Text utilities
 brew "coreutils"
 # Modern diagram scripting language that turns text to diagrams
@@ -127,8 +127,12 @@ brew "helix"
 brew "helm"
 # Configurable static site generator
 brew "hugo"
+# Run and Test HTTP Requests with plain text and curl
+brew "hurl"
 # Java language specific implementation of the Language Server Protocol
 brew "jdtls"
+# Interactive JSON filter using jq
+brew "jnv"
 # Lightweight and flexible command-line JSON processor
 brew "jq"
 # Handy way to save and run project-specific commands
@@ -143,6 +147,8 @@ brew "libdap"
 brew "libxslt"
 # LTeX+ Language Server: maintained fork of LTeX Language Server
 brew "ltex-ls-plus"
+# Personal Knowledge Management System for the LSP
+brew "markdown-oxide"
 # Language Server Protocol for Markdown
 brew "marksman"
 # Replacement for ls, cp and other commands for object storage
@@ -155,6 +161,8 @@ brew "openssl@1.1"
 brew "openvino"
 # 7-Zip (high compression file archiver) implementation
 brew "p7zip"
+# Tool for visualizing differences between two pdf files
+brew "pdf-diff"
 # Highly capable, feature-rich programming language
 brew "perl"
 # General-purpose scripting language
@@ -189,8 +197,8 @@ brew "shfmt"
 brew "starship"
 # Organize software neatly under a single directory tree (e.g. /usr/local)
 brew "stow"
-# Secures, stores, and tightly controls access to secrets
-brew "vault"
+# Markup-based typesetting system
+brew "typst"
 # Executes a program periodically, showing output fullscreen
 brew "watch"
 # Internet file retriever
@@ -201,12 +209,16 @@ brew "wxwidgets"
 brew "yarn"
 # Process YAML, JSON, XML, CSV and properties documents from the CLI
 brew "yq"
+# Find security issues in GitHub Actions setups
+brew "zizmor"
 # Fish-like fast/unobtrusive autosuggestions for zsh
 brew "zsh-autosuggestions"
 # Streaming replication for SQLite
 brew "benbjohnson/litestream/litestream"
 # Terraform Language Server
 brew "hashicorp/tap/terraform-ls"
+# Vault
+brew "hashicorp/tap/vault"
 # CLI for out-of-band management of Kubernetes nodes created by Talos
 brew "siderolabs/tap/talosctl"
 # Password manager that keeps all passwords secure behind one password
@@ -236,20 +248,20 @@ cask "dash@6"
 # Universal database tool and SQL client
 cask "dbeaver-community"
 # App to build and share containerised applications and microservices
-cask "docker"
+cask "docker-desktop"
 # System-wide audio equaliser
 cask "eqmac"
 # Web browser
 cask "firefox"
 cask "font-jetbrains-mono"
+# Set of tools to manage resources and applications hosted on Google Cloud
+cask "gcloud-cli"
 # Disk partitioning tool
 cask "gdisk"
 # Free and open-source image editor
 cask "gimp"
 # Web browser
 cask "google-chrome"
-# Set of tools to manage resources and applications hosted on Google Cloud
-cask "google-cloud-sdk"
 # Vector graphics editor
 cask "inkscape"
 # App to manage software development and track bugs
@@ -264,8 +276,6 @@ cask "loom"
 cask "meta"
 # Tool to create text-based art
 cask "monodraw"
-# Desktop client for the Matrix protocol
-cask "nheko"
 # Open-source software for live streaming and screen recording
 cask "obs"
 # Knowledge base that works on top of a local folder of plain text Markdown files
@@ -287,7 +297,7 @@ cask "strawberry"
 # Text editor for code, markup and prose
 cask "sublime-text"
 # Real time file synchronisation software
-cask "syncthing"
+cask "syncthing-app"
 # Virtual machines UI using QEMU
 cask "utm"
 # Open-source code editor
@@ -297,7 +307,7 @@ cask "vlc"
 # GPU-accelerated cross-platform terminal emulator and multiplexer
 cask "wezterm"
 # Network protocol analyzer
-cask "wireshark"
+cask "wireshark-app"
 vscode "aaron-bond.better-comments"
 vscode "bbenoist.nix"
 vscode "be5invis.toml"
@@ -317,6 +327,7 @@ vscode "ms-kubernetes-tools.vscode-kubernetes-tools"
 vscode "ms-python.debugpy"
 vscode "ms-python.python"
 vscode "ms-python.vscode-pylance"
+vscode "ms-python.vscode-python-envs"
 vscode "ms-vsliveshare.vsliveshare"
 vscode "octref.vetur"
 vscode "phoenixframework.phoenix"
