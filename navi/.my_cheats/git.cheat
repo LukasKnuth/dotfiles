@@ -30,6 +30,10 @@ git branch --no-merged <branch>
 ; replace "HEAD" with any other end referece
 git show --pretty="" --name-only main..HEAD
 
+# Show diff of staged change
+; Add `stash@{n}` to referrr to the n-th entry on the stack.
+git stash show -p
+
 $ remote: git remote
 $ branch: git branch --format='%(refname:short)'
 $ tag: git tag
