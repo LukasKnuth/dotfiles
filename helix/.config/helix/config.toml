@@ -14,7 +14,7 @@ enable = true
 timeout = 5000
 
 [editor.statusline]
-left = ["spinner", "read-only-indicator", "file-name"]
+left = ["spinner", "read-only-indicator", "file-name", "primary-selection-length"]
 center = []
 right = ["position-percentage"]
 
