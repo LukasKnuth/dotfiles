@@ -12,7 +12,7 @@ config.font = wezterm.font 'JetBrains Mono'
 -- NOTE: Ligatures are ON be default
 -- Enable slashed zeros
 config.harfbuzz_features = { 'zero' }
-config.font_size = 22.0
+config.font_size = is_macos() and 22.0 or 16.0
 config.color_scheme = 'Catppuccin Mocha'
 
 -- GUI
