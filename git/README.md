@@ -2,6 +2,11 @@
 
 My personal git configuration with all my aliases.
 
+The configuration requires additional tools to be installed:
+
+- [difftastic](https://github.com/Wilfred/difftastic) for semantic diffs on `di` and `dis`
+- [delta](https://github.com/dandavison/delta) for nicer diff output on `ddi` and `ddis`
+
 ## SSH Key
 
 The configuration references an SSH key that isn't included in my dotfiles.
