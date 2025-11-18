@@ -31,13 +31,12 @@ config.keys = {
   { key = 'c', mods = mod_key, action = act.CopyTo 'Clipboard' },
   { key = 'v', mods = mod_key, action = act.PasteFrom 'Clipboard' },
   { key = 'f', mods = mod_key, action = act.Search 'CurrentSelectionOrEmptyString' },
-  { key = 'k', mods = mod_key, action = act.ClearScrollback 'ScrollbackAndViewport' },
   { key = 'n', mods = mod_key, action = act.SpawnWindow },
   { key = 'w', mods = mod_key, action = act.CloseCurrentTab { confirm = true } },
   { key = 'p', mods = mod_key, action = act.ActivateCommandPalette },
   { key = 'u', mods = mod_key, action = act.CharSelect { copy_on_select = true, copy_to = 'ClipboardAndPrimarySelection' } },
-  { key = 'UpArrow', mods = 'SHIFT', action = act.ScrollByPage(-0.75) },
-  { key = 'DownArrow', mods = 'SHIFT', action = act.ScrollByPage(0.75) },
+  { key = 'k', mods = mod_key..'|SHIFT', action = act.ScrollByPage(-0.75) },
+  { key = 'j', mods = mod_key..'|SHIFT', action = act.ScrollByPage(0.75) },
 }
 
 config.key_tables = {
