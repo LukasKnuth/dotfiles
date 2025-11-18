@@ -1,12 +1,17 @@
 % network
 
-# TCP listening on port
-lsof -Pn -iTCP:<port>
+# Listening ports
+ss --numeric --process --listening <protocol> <version> 'sport = :<port>'
 
-# UDP listening on port
-lsof -Pn -iUDP:<port>
+# Listening on device
+ss --numeric --process --listening 'dev = <device>'
 
-# Add loopback IP (127.0.0.0/8)
-; Probably needs sudo to work.
-; Should only be necessary on macOS, on Linux you can just bind
-ifconfig lo0 alias <ip> up
+# Connected to port
+ss --numeric --process <protocol> <version> state connected 'dport = :<port>'
+
+# List network devices
+ip --brief link show
+
+$ protocol: echo -e "--tcp\n--udp\n--unix\n"
+$ version: echo -e "--ipv4\n--ipv6\n"
+$ device: ip --json link show | jq -r '.[].ifname'
