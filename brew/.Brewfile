@@ -111,6 +111,8 @@ cask "1password-cli"
 cask "aerospace"
 # Professional graphic design software
 cask "affinity-designer"
+# Enable Windows-like alt-tab
+cask "alt-tab"
 # Backup and restore SD cards, USB drives, external HDD, etc
 cask "applepi-baker"
 # Multi-track audio editor and recorder
