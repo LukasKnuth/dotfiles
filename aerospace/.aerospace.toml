@@ -12,12 +12,12 @@ key-mapping.preset = 'qwerty'
 [gaps]
 # The `monitor.X` matches the case-insensitive name of a display
 # `built-in` is the laptop screen, if its turned on
-inner.horizontal = 14
+inner.horizontal = 10
 inner.vertical =   6
 outer.left = [ { monitor.'built-in' = 4 }, 8 ]
 outer.right = [ { monitor.'built-in' = 4 }, 8 ]
 outer.bottom = [ { monitor.'built-in' = 0 }, 6 ]
-outer.top = [ { monitor.'built-in' = 2 }, 4 ]
+outer.top = 0
 
 [workspace-to-monitor-force-assignment]
 # Forces workspace 1 to always appear on the main montior
