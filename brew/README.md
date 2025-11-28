@@ -3,13 +3,22 @@
 The Brewfile contains all packages installed through `brew`. It's a simple way to set up macOS from scratch.
 This package also contains a Script to automatically update the Brewfile every time a new package is installed.
 
-## Dumping the file manually
+## Removing incorrect entries
+
+Dumping the current Brewfile can contain packages originally installed as dependencies.
+The `brew bundle dump` command includes a formula if:
+
+- `installed_on_request` is true **OR**
+- `installed_as_dependency` is false
+
+Bot can be changed _manually_ by editing the `.json` file:
 
 ```bash
-brew bundle dump --global --force --describe
+# Manually update
+hx /opt/homebrew/Cellar/[formulae]/*/INSTALL_RECEIPT.json
+# ONLY marks as "not requested" - can still be a dependency
+brew tab --no-installed-on-request [formulae]
 ```
-
-This will create a `~/.Brewfile` that contains **all** formulae which where _explicitly_ installed, meaning they are not dependencies of other formulae.
 
 ## Installing everything from the file
 
@@ -32,16 +41,19 @@ The script must be made executable with `chmod +x script.sh`. Then, run:
 SUDO_ASKPASS=/path/to/pw.sh brew bundle install --file="$HOME/.Brewfile"
 ```
 
+## Dumping the file manually
+
+```bash
+brew bundle dump --global --force --describe
+```
+
+This will create a `~/.Brewfile` that contains **all** formulae which where _explicitly_ installed, meaning they are not dependencies of other formulae.
+
 ## Brew basics
 
-* Find a with `brew search <pkg>`
-* Install with `brew install <pkg>`
-* Uninstall with `brew uninstall <pk>`
-* List all installed `brew leaves --installed-on-request`
-* List taps (sources) `brew tap`
-* Remove tap `brew untap <tap>`
+* Explicitly installed `brew leaves --installed-on-request`
 
-For a bit more usability, it's also possible to get descriptions with installed lists:
+Get descriptions for each entry in the list with:
 
 * Formulae: `brew leaves | xargs brew desc --eval-all`
 * Casks: `brew ls --casks | xargs brew desc --eval-all`
