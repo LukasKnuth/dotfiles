@@ -62,3 +62,4 @@ Get descriptions for each entry in the list with:
 
 * https://apple.stackexchange.com/a/154750/369828
 * https://apple.stackexchange.com/a/452677/369828
+* https://github.com/Homebrew/brew/issues/18754
