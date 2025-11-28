@@ -3,6 +3,16 @@
 The Brewfile contains all packages installed through `brew`. It's a simple way to set up macOS from scratch.
 This package also contains a Script to automatically update the Brewfile every time a new package is installed.
 
+## Installing without adding
+
+For dependencies only installed as deps e.g. to compile a C program:
+
+```bash
+brew install --as-dependency [formulae]
+```
+
+This will install the formula but not add it to the Brewfile (see below).
+
 ## Removing incorrect entries
 
 Dumping the current Brewfile can contain packages originally installed as dependencies.
