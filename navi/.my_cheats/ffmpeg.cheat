@@ -6,6 +6,9 @@ ffmpeg -ss <start_time> -i <input> -map 0 -codec copy -to <how_long> <output>
 # Extract specific stream from media
 ffmpeg -i <input> -map <stream> -codec copy <output>
 
+# Add .srt subtitle to movie
+ffmpeg -i <movie> -i <sub> -c copy -c:s mov_text <output>
+
 # Create high-quality GIF
 ; https://superuser.com/a/1695537/122634
 ffmpeg -i <input> -filter_complex "fps=<fps>,scale=<scale>:-1:flags=lanczos,split[s0][s1];[s0]palettegen=max_colors=<colors>[p];[s1][p]paletteuse=dither=bayer" -loop <loop> <output>
